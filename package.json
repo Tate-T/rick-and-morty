@@ -4,7 +4,7 @@
   "description": "",
   "homepage": "https://github.com/Tate-T/rick-and-morty",
   "scripts": {
-    "start": "parcel src/*.html",
+    "start": "npx parcel src/index.html",
     "build": "parcel build src/*.html --public-url /rick-and-morty/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
