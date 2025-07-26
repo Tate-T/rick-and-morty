@@ -1,3 +1,38 @@
-.o {
-    color: aqua;
+.explore {
+    border-radius: 100px;
+    background: #0D171D;
+    width: 1442px;
+    height: 744px;
+    flex-shrink: 0;
+
+    &__text {
+        width: 610px;
+        color: #FAFAFA;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px;
+        /* 109.091% */
+    }
+
+    &__button {
+        display: inline-flex;
+        padding: 12px 24px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 1000px;
+        background: #A1D737;
+        color: #0D171D;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px;
+        /* 128.571% */
+        border: none;
+    }
+
+    &__button__box {
+        display: flex;
+    }
 }

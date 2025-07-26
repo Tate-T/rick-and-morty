@@ -1,4 +1,4 @@
-4647
+4657
 92C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@nodelib\fs.walk\out\settings.js133979377122745604 0
 89C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\immutable\dist\immutable.d.ts133979837678368433 0
 140C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-optional.cmd133979377061145562 0
@@ -34,7 +34,7 @@
 81C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\_\_using133979377053957433 1
 96C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\source-map\dist\wasm.js.flow133979377046187650 0
 58C:\Users\maxil\Documents\GitHub\rick-and-morty\.posthtmlrc133979378564278874 0
-59C:\Users\maxil\Documents\GitHub\rick-and-morty\src\partials133979835469326661 1
+59C:\Users\maxil\Documents\GitHub\rick-and-morty\src\partials133979866322964041 1
 80C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\color-name\README.md133979377045334909 0
 77C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@msgpackr-extract133979837684829676 1
 110C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\css-media-resolution.js133979377051608188 0
@@ -42,7 +42,7 @@
 77C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\readdirp\index.js133979837677568224 0
 89C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\packager-html\LICENSE133979377044395711 0
 95C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\regions\alt-an.js133979377047447239 0
-57C:\Users\maxil\Documents\GitHub\rick-and-morty\.gitignore133979377824687932 0
+57C:\Users\maxil\Documents\GitHub\rick-and-morty\.gitignore133980133002427502 0
 106C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\css-font-palette.js133979377051178325 0
 88C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\posthtml-render\package.json133979837647572094 0
 84C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\locate-path\package.json133979377122126062 0
@@ -64,7 +64,7 @@
 107C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\css-focus-visible.js133979377051148314 0
 84C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\ansi-styles\package.json133979377045014694 0
 91C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\profiler\lib\index.d.ts133979377047137353 0
-51C:\Users\maxil\Documents\GitHub\rick-and-morty\dist133979843839297384 1
+51C:\Users\maxil\Documents\GitHub\rick-and-morty\dist133980133096958801 1
 119C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_dump.c133979377048586876 0
 65C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\async133979377124475396 1
 113C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\kerning-pairs-ligatures.js133979377055737108 0
@@ -102,7 +102,7 @@
 88C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\weak-lru-cache\tests\test.js133979377045987704 0
 82C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\term-size\package.json133979377046367605 0
 91C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\regions\KN.js133979377055887009 0
-50C:\Users\maxil\Documents\GitHub\rick-and-morty\src133979454699676968 1
+50C:\Users\maxil\Documents\GitHub\rick-and-morty\src133979866322954111 1
 85C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\reusify\.github\workflows133979377122795868 1
 113C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\error-overlay\src\components\HydrationDiff.js133979377046947420 0
 102C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\core\src\requests\ConfigRequest.js133979377048996770 0
@@ -111,7 +111,7 @@
 81C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\node-releases\LICENSE133979377044325737 0
 89C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\entities\lib\encode-trie.d.ts133979837648061934 0
 66C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\base-x133979377045374909 1
-72C:\Users\maxil\Documents\GitHub\rick-and-morty\src\partials\explore.html133979843594535179 0
+72C:\Users\maxil\Documents\GitHub\rick-and-morty\src\partials\explore.html133980132313305708 0
 81C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\ordered-binary\assets133979377046947420 1
 74C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\async\queue.js133979377123935492 0
 113C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\comparedocumentposition.js133979377050108669 0
@@ -125,7 +125,7 @@
 103C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\source-map-js\lib\source-map-generator.d.ts133979837677948540 0
 57C:\Users\maxil\Documents\GitHub\rick-and-morty\src\images133979376088426843 1
 73C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\clone\LICENSE133979377045365215 0
-61C:\Users\maxil\Documents\GitHub\rick-and-morty\src\index.html133979837347661609 0
+61C:\Users\maxil\Documents\GitHub\rick-and-morty\src\index.html133979866468993026 0
 98C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\jpeg2000.js133979377055646909 0
 91C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\update-browserslist-db\index.js133979377045334909 0
 97C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\core\test\BundleGraph.test.js133979377048736851 0
@@ -146,13 +146,13 @@
 89C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\error-overlay\LICENSE133979377044665627 0
 64C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc133979837684819678 1
 108C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\packager-js\src\ScopeHoistingPackager.js133979377047487248 0
-60C:\Users\maxil\Documents\GitHub\rick-and-morty\src\sass\base133979452608882715 1
+60C:\Users\maxil\Documents\GitHub\rick-and-morty\src\sass\base133979866322973792 1
 86C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\graph\src\types.js133979377047767151 0
 77C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\fastq\example.mjs133979377122755858 0
 84C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\graceful-fs\package.json133979377122575653 0
 110C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\dom-serializer\node_modules\entities\lib\encode.js133979837647622082 0
 66C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\merge2133979377122395722 1
-66C:\Users\maxil\Documents\GitHub\rick-and-morty\src\sass\components133979835617671070 1
+66C:\Users\maxil\Documents\GitHub\rick-and-morty\src\sass\components133979866322983797 1
 88C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\posthtml-expressions\license133979837647486979 0
 91C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\transformer-raw\LICENSE133979377044385701 0
 121C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@msgpackr-extract\msgpackr-extract-win32-x64\node.abi115.node133979377045787879 0
@@ -204,6 +204,7 @@
 100C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@nodelib\fs.scandir\out\adapters\fs.d.ts133979377122905835 0
 85C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\dotenv\lib\env-options.js133979377045434916 0
 77C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\sass\types\legacy133979837679229106 1
+134C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\48133979843856256611 1
 102C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\posthtml-parser\dist\location-tracker.d.ts133979837647742038 0
 95C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\htmlparser2\lib\WritableStream.d.ts133979837647941974 0
 119C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_stat.1133979377048067060 0
@@ -212,7 +213,7 @@
 121C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\parcel-reporter-clean-dist\test\unit\getFilesToRemove.spec.js133979837526921150 0
 91C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\regions\GF.js133979377054597227 0
 93C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\let.js133979377056026781 0
-80C:\Users\maxil\Documents\GitHub\rick-and-morty\src\sass\components\_explore.scss133979843741883428 0
+80C:\Users\maxil\Documents\GitHub\rick-and-morty\src\sass\components\_explore.scss133980130892180262 0
 84C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\safe-buffer\package.json133979377045024690 0
 81C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\fs-extra\package.json133979377123085760 0
 91C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\async\internal\initialParams.js133979377123655314 0
@@ -234,7 +235,7 @@
 108C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\css-default-pseudo.js133979377050898406 0
 77C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\parcel\src\bin.js133979377045254920 0
 110C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\esm\_unsupported_iterable_to_array.js133979377051328270 0
-73C:\Users\maxil\Documents\GitHub\rick-and-morty\src\sass\base\_common.scss133979452462968464 0
+73C:\Users\maxil\Documents\GitHub\rick-and-morty\src\sass\base\_common.scss133979867549080131 0
 102C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\utility-types\dist\aliases-and-guards.d.ts133979377047307286 0
 111C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_copy.1133979377047777156 0
 87C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@lezer\common\dist\index.js133979377046157658 0
@@ -411,6 +412,7 @@
 83C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\utility-types\README.md133979377047037369 0
 81C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\posthtml\lib\index.js133979837647572094 0
 76C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\dotenv\README.md133979377046617527 0
+134C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\56133979843857945270 1
 78C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\gh-pages\readme.md133979377122685879 0
 75C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\email-addresses133979377122825857 1
 68C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\entities133979837647991959 1
@@ -440,6 +442,7 @@
 88C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\msgpackr-extract\binding.gyp133979377045084667 0
 74C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\find-cache-dir133979377122415712 1
 106C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\transformer-postcss\lib\loadPlugins.js133979377046057707 0
+146C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\rick-and-morty.3745f4e9.css133979843855876631 0
 93C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\posthtml-expressions\package.json133979837647782026 0
 67C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\find-up133979377122485953 1
 92C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\transformer-posthtml\lib133979377045434916 1
@@ -1000,6 +1003,7 @@
 77C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\term-size\license133979377045194950 0
 89C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\lmdb\dependencies\lz4\lib\dll133979377049868725 1
 79C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\watcher\src133979377048356972 1
+173C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\48\f7114cb025fa60e20a6cd1afc45ddef517622f133979843856216576 0
 87C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\dom-serializer\node_modules133979837646875245 1
 84C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\_\_to_array133979377053617540 1
 117C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\node-releases\data\release-schedule\release-schedule.json133979377045837771 0
@@ -1217,6 +1221,7 @@
 108C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\src\_object_destructuring_empty.mjs133979377054897141 0
 91C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\regions\VC.js133979377059885948 0
 84C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\_\_inherits133979377052907793 1
+134C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\4f133979843856346462 1
 111C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\esm\_class_extract_field_descriptor.js133979377050118655 0
 93C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\sass\types\value\calculation.d.ts133979837678668326 0
 86C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\sass\types\value\list.d.ts133979837679098893 0
@@ -2101,7 +2106,6 @@
 73C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.bin\sass.ps1133979837684769702 0
 85C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\package.json133979377060875884 0
 80C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\is-glob\package.json133979377045024690 0
-79C:\Users\maxil\Documents\GitHub\rick-and-morty\dist\rick-and-morty.3745f4e9.css133979843839187135 0
 82C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\detect-libc\.npmignore133979377044675611 0
 109C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\_\_ts_dispose_resources\package.json133979377053757495 0
 73C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\async\some.js133979377124205150 0
@@ -2187,7 +2191,7 @@
 98C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\_\_ts_values\package.json133979377053847475 0
 80C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\fs-extra\lib\esm.mjs133979377123115742 0
 105C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\input-selection.js133979377055446971 0
-148C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\logs\refs\heads\gh-pages133979842323530192 0
+148C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\logs\refs\heads\gh-pages133979843857995552 0
 77C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\globby\index.d.ts133979377122625641 0
 74C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\globby\license133979377122156066 0
 77C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\async\parallel.js133979377123875251 0
@@ -2534,7 +2538,7 @@
 91C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\regions\DE.js133979377053137698 0
 72C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\domutils\lib133979837648051939 1
 81C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\domutils\package.json133979837647802020 0
-130C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\config133979842322560677 0
+130C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\config133979843857037000 0
 101C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@nodelib\fs.walk\out\providers\async.d.ts133979377122875563 0
 108C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\src\_class_private_field_update.mjs133979377054467289 0
 98C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\core\test\fixtures\module-b.js133979377049818774 0
@@ -2651,6 +2655,7 @@
 88C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\chrome-trace-event\README.md133979377045424916 0
 98C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\chrome-trace-event\dist\trace-event.js133979377044445694 0
 72C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\chokidar\esm133979837677798150 1
+83C:\Users\maxil\Documents\GitHub\rick-and-morty\dist\rick-and-morty.d4f61d69.css.map133980133096948622 0
 100C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\_\_await_value\package.json133979377051788129 0
 81C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\chokidar\handler.d.ts133979837677748156 0
 79C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\chokidar\handler.js133979837677578216 0
@@ -2662,7 +2667,6 @@
 127C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\core\test\fixtures\config-extends-not-found\.parcelrc-json5133979377047177350 0
 87C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\events\lib\types.js133979377046557535 0
 83C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\chokidar\esm\index.d.ts133979837677848570 0
-150C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\rick-and-morty.b2a5a237.css.map133979842321406809 0
 81C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\chokidar\esm\index.js133979837677598206 0
 110C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\high-resolution-time.js133979377054867142 0
 85C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\chokidar\esm\package.json133979837677628204 0
@@ -2966,6 +2970,7 @@
 96C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\webgl2.js133979377060426036 0
 97C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\css-has.js133979377051308276 0
 101C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\css-hyphens.js133979377051328270 0
+134C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\8c133979843856306214 1
 103C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\css-image-set.js133979377051358260 0
 114C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\css-indeterminate-pseudo.js133979377051398259 0
 99C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\xhtmlsmil.js133979377060765686 0
@@ -3037,6 +3042,7 @@
 101C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\customevent.js133979377052997746 0
 101C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\_\_object_without_properties133979377053327635 1
 82C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\core\binding.d.ts133979377045767799 0
+173C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\8c\5a24738d2bc6cad326f66f87980a834f200c47133979843856276558 0
 97C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\datauri.js133979377053097716 0
 94C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\caniuse-lite\data\features\wasm.js133979377060275840 0
 77C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\core\util.js133979377047097374 0
@@ -3643,7 +3649,7 @@
 112C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\_\_class_private_field_get\package.json133979377052187995 0
 119C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\_\_class_extract_field_descriptor\package.json133979377052088015 0
 132C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\_\_class_check_private_static_field_descriptor\package.json133979377052058028 0
-143C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\refs\remotes\origin133979842343740311 1
+143C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\refs\remotes\origin133979843876056912 1
 91C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\esm\_call_super.js133979377049978706 0
 118C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\_\_class_apply_descriptor_update\package.json133979377051958057 0
 102C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\src\_wrap_async_generator.mjs133979377055257029 0
@@ -3850,6 +3856,7 @@
 105C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\cjs\_tagged_template_literal.cjs133979377049386621 0
 87C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\cjs\_throw.cjs133979377049406638 0
 85C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@parcel\rust\package.json133979377046407572 0
+173C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\4f\79838ecc48807be282c33872a5725d0f1f685f133979843856326211 0
 97C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\cjs\_to_property_key.cjs133979377049488869 0
 93C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\cjs\_ts_decorate.cjs133979377049518854 0
 102C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@swc\helpers\cjs\_ts_dispose_resources.cjs133979377049538828 0
@@ -4574,30 +4581,31 @@
 90C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@lezer\common\dist\index.d.cts133979377045677832 0
 89C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\@lezer\common\dist\index.d.ts133979377046677509 0
 75C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages133979842299591498 1
-118C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git133979842321386801 1
+118C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git133979843855866367 1
 132C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.editorconfig133979842310424021 0
-123C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git133979842323580107 1
+123C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git133979843858035575 1
 129C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.gitignore133979842310444022 0
 128C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.parcelrc133979842310583640 0
-129C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\index.html133979842321396896 0
-146C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\rick-and-morty.b2a5a237.css133979842321396896 0
+129C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\index.html133979843855876631 0
+150C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\rick-and-morty.3745f4e9.css.map133979843855876631 0
 161C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.parcel-cache\172f5d14657a98d8-BundleGraph133979842310463978 0
 162C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.parcel-cache\aa29e6300dc07824-RequestGraph133979842310493986 0
 162C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.parcel-cache\snapshot-aa29e6300dc07824.txt133979842310583640 0
 136C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.github\workflows133979842310444022 0
-138C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\COMMIT_EDITMSG133979842323429900 0
-134C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\FETCH_HEAD133979842316546173 0
-128C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\HEAD133979842319181048 0
+138C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\COMMIT_EDITMSG133979843857895571 0
+134C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\FETCH_HEAD133979843852008114 0
+128C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\HEAD133979843854226877 0
 134C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\0f133979842323489887 1
 129C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\hooks133979842299811427 1
-129C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\index133979842323369922 0
-131C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects133979842323860182 1
-133C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\ORIG_HEAD133979842320505673 0
-134C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\refs\heads133979842323540145 1
+129C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\index133979843857835388 0
+131C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects133979843858315590 1
+133C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\ORIG_HEAD133979843855156918 0
+134C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\refs\heads133979843858005257 1
 136C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\refs\remotes133979842343690593 1
-152C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\refs\remotes\origin\gh-pages133979842343700320 0
-143C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\refs\heads\gh-pages133979842323520168 0
+152C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\refs\remotes\origin\gh-pages133979843876027054 0
+143C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\refs\heads\gh-pages133979843857985768 0
 134C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\54133979842321846703 1
+134C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\80133979843857825313 1
 134C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\aa133979842321897076 1
 134C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\c6133979842323360187 1
 136C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\info133979842299991373 1
@@ -4605,12 +4613,14 @@
 187C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\pack\pack-06df9b6772bd43303128a6cb8ff29cc91111e3f9.pack133979842309593947 0
 186C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\pack\pack-06df9b6772bd43303128a6cb8ff29cc91111e3f9.rev133979842309623955 0
 173C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\c6\df855c2c60436f2bda0ab5eb1e61c45746dfc9133979842323320201 0
+173C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\80\71a2036fdd7fef5d29effd9f374fd9eeb274a1133979843857795574 0
+173C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\56\049d6c65615af7f79f698ab95f6bfc9f075e74133979843857915631 0
 173C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\objects\0f\42edc54813b76474eb7ccad01f4d7c99c4e77c133979842323449894 0
-133C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\logs\HEAD133979842323530192 0
+133C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\logs\HEAD133979843857985768 0
 133C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\logs\refs133979842343710295 1
 139C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\logs\refs\heads133979842310314142 1
 148C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\logs\refs\remotes\origin133979842343720312 1
-157C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\logs\refs\remotes\origin\gh-pages133979842343730596 0
+157C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\logs\refs\remotes\origin\gh-pages133979843876047136 0
 136C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\info\exclude133979842299841418 0
 151C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\hooks\applypatch-msg.sample133979842299671475 0
 147C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.cache\gh-pages\https!github.com!Tate-T!rick-and-morty.git\.git\hooks\commit-msg.sample133979842299681470 0
@@ -4643,6 +4653,6 @@
 69C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.bin\sass133979837684769702 0
 75C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.bin\semver.cmd133979377061135555 0
 75C:\Users\maxil\Documents\GitHub\rick-and-morty\node_modules\.bin\semver.ps1133979377061135555 0
-62C:\Users\maxil\Documents\GitHub\rick-and-morty\dist\index.html133979843839167144 0
-83C:\Users\maxil\Documents\GitHub\rick-and-morty\dist\rick-and-morty.3745f4e9.css.map133979843839287433 0
+62C:\Users\maxil\Documents\GitHub\rick-and-morty\dist\index.html133980133096888833 0
+79C:\Users\maxil\Documents\GitHub\rick-and-morty\dist\rick-and-morty.d4f61d69.css133980133096888833 0
 64C:\Users\maxil\Documents\GitHub\rick-and-morty\.github\workflows133979377546215180 0
