@@ -2,7 +2,6 @@
   "name": "rick-and-morty",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "homepage": "https://github.com/Tate-T/rick-and-morty",
   "scripts": {
     "start": "parcel src/*.html",
@@ -23,5 +22,10 @@
   "dependencies": {
     "gh-pages": "^6.3.0",
     "parcel": "^2.15.4"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.4",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^2.0.1"
   }
 }
