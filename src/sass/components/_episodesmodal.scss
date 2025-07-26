@@ -1,0 +1,132 @@
+.episodes-modal {
+  background-color: #0f1626;
+  border-radius: 20px;
+  padding: 32px;
+  color: white;
+  max-width: 673px;
+  width: 100%;
+  height: auto;
+  margin: 40px auto;
+  position: relative;
+  box-sizing: border-box;
+
+&__fake-container {
+  border-radius: 20px;
+  background-color: #0f1626;
+  padding: 32px;
+  border: 2px solid #9eff00;
+}
+&__series-name {
+  color: #fafafa;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+&__series {
+  display: flex;
+  margin-bottom: 32px;
+}
+&__series-id {
+  color: rgba(250, 250, 250, 0.5);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+&__series-name-id {
+  color: #fafafa;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+&__series-air-date {
+  color: rgba(250, 250, 250, 0.5);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+&__series-date {
+  color: #fafafa;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+&__characters {
+  color: #fafafa;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+&__major-characters {
+  color: rgba(250, 250, 250, 0.5);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 8px;
+}
+&__characters-container {
+  display: flex;
+}
+&__characters-card {
+  display: flex;
+  align-items: center;
+}
+&__characters-name {
+  color: #fafafa;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  padding-right: 32px;
+}
+
+&__id-container {
+  padding-right: 32px;
+}
+
+&__characters-image {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-right: 14px;
+  border-radius: 8px;
+}
+
+&__close-button{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    fill: #9eff00;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:hover {
+      fill: #caff33;
+    }
+}
+
+    
+}

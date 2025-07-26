@@ -1,0 +1,90 @@
+.episodes {
+display: flex;
+    justify-content: center;
+    align-items: center;
+
+&__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+&__input-container{
+    padding-right: 16px;
+}
+&__input-name {
+color: #111;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+}
+&__input {
+        display: flex;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 72px;
+border-radius: 100px;
+border: 1.5px solid #111;
+background: #DAF836;
+
+&::placeholder {
+  color: #111;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+}
+
+&__input-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+&__svg {
+  position: absolute;
+  right: 16px;
+  bottom: 6px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+&__season-select-name {
+    color: #111;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+}
+&__season-select {
+    display: flex;
+padding: 10px 24px;
+justify-content: center;
+align-items: center;
+gap: 44px;
+border-radius: 100px;
+border: 1.5px solid #111;
+}
+&__load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+&__load-more-btn {
+ display: inline-flex;
+padding: 12px 24px;
+align-items: flex-start;
+gap: 10px;
+border: none;
+border-radius: 1000px;
+background: #A1D737;
+}
+}
