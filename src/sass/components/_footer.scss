@@ -1,0 +1,101 @@
+.footer {
+    padding-top: 64px;
+    padding-bottom: 16px;
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__image {
+        width: 99px;
+        height: 84px;
+        flex-shrink: 0;
+    }
+
+    &__rick {
+        color: #FAFAFA;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        /* 110% */
+        letter-spacing: 0.44px;
+        display: flex;
+        width: 153px;
+        padding: 14px 0;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 25px;
+        background: #0D171D;
+    }
+
+
+    &__morty {
+        display: flex;
+        width: 125px;
+        transform: rotate(32.083deg);
+        padding: 14px 0px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 25px;
+        background: #DAF836;
+        color: #111;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        /* 104.762% */
+        letter-spacing: 0.44px;
+        margin-left: 95px;
+        margin-top: -75px;
+    }
+
+    &__links {
+        display: flex;
+        width: 144px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-left: 331px;
+        margin-right: 252px;
+    }
+
+    &__link {
+        color: #111;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        /* 112.5% */
+        letter-spacing: 0.16px;
+    }
+
+    &__svgs {
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    &__twitter__fix {
+        padding: 15px;
+        border-radius: 12px;
+        border: 1px solid rgba($color: #111, $alpha: 0.2);
+    }
+
+    &__agreement {
+        color: rgba(17, 17, 17, 0.40);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        margin-top: 155.5px;
+        /* 128.571% */
+    }
+}
