@@ -1,6 +1,7 @@
 .header {
 
-    background: #0D171D;;
+    background: #0D171D;
+    ;
 
     &__flex-elements {
         display: flex;
@@ -8,7 +9,16 @@
 
     &__list {
         display: flex;
-        margin-left: 128px;
+        margin-left: 20px;
+        
+
+        @media screen and (min-width: 768px) {
+            margin-left: 32px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 128px;
+        }
     }
 
     &__button {
@@ -19,44 +29,89 @@
         padding-right: 24px;
         border: none;
         border-radius: 1000px;
-         font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: 18px;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 18px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 18px;
+
+        }
+
     }
 
+    &__logo {
+        width: 100px;
+        height: 100px;
+        margin-left: 128px;
+    }
+
+    &__text {
+        color: white;
+        font-family: Montserrat;
+
+    }
+    
     &__button-second {
-        background: transparent;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        padding-left: 24px;
-        padding-right: 24px;
-        border: 1px solid rgba(250, 250, 250, 0.30);
-        border-radius: 1000px;
-        color: white;
-         font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: 18px;
+    background: transparent;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 1px solid rgba(250, 250, 250, 0.30);
+    border-radius: 1000px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
     }
 
-    &__button-serch {
-        background: transparent;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        padding-left: 24px;
-        padding-right: 24px;
-        border-radius: 1000px;
-        border: 1px solid rgba(250, 250, 250, 0.30);
-        color: white;
-        text-align: center;
-        margin-left: 820px;
-         font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: 18px; 
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px;
+        
     }
 }
+
+&__button-serch {
+    background: transparent;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 1000px;
+    border: 1px solid rgba(250, 250, 250, 0.30);
+    color: white;
+    text-align: center;
+    margin-left: 820px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+}
+
