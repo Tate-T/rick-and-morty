@@ -1,53 +1,110 @@
 :root {
-  --font-family: "Montserrat", sans-serif;
-  --second-family: "Poppins", sans-serif;
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Poppins", sans-serif;
 }
+
 :root {
-	--black: #0d171d;
-	--green: #a1d737;
-	--light-green: #daf836;
+    --black: #0d171d;
+    --green: #a1d737;
+    --light-green: #daf836;
 }
+
 .main {
     &__fixer {
         display: flex;
     }
+
     &__button {
         display: block;
         font-family: var(--font-family);
-            font-weight: 600;
-            border-radius: 4px;
-            background-color: black;
-            font-size: 28px;
-            line-height: 114%;
-            color: #fafafa;
+        font-weight: 600;
+        border-radius: 4px;
+        background-color: black;
+        font-size: 28px;
+        line-height: 114%;
+        color: #fafafa;
+        @media screen and (min-width: 768px) {
+            font-size: 44px;
+        }
     }
+
     &__title {
-    display: block;
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 114%;
-    color: black;
+        display: block;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 114%;
+        color: black;
+        @media screen and (min-width: 768px) {
+                font-size: 44px;
+        }
     }
+
     &__slide-button-1,
     &__slide-button-2,
     &__slide-button-3,
-    &__slide-button-4
-    &__slide-button-5 {
-    font-family: var(--font-family);
-font-weight: 600;
-font-size: 18px;
-line-height: 133%;
-color: #111;
-}
-&__slide-button-1,
+    &__slide-button-4 &__slide-button-5 {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 133%;
+        color: #111;
+        @media screen and (min-width: 768px) {
+                font-size: 16px;
+            }
+    }
+
+    &__slide-button-1,
     &__slide-button-2,
     &__slide-button-3,
-    &__slide-button-4
-    &__slide-button-5:hover {
-color: var(--green);
-}
-&__text {
-    
-}
+    &__slide-button-4 &__slide-button-5:hover {
+        color: var(--green);
+    }
+
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        color: #111;
+    }
+
+    &__photo {
+        width: 233px;
+        height: 279px;
+        @media screen and (min-width: 768px) {
+            width: 395px;
+            height: 627px;
+        }
+    }
+
+    &__slide-1 {
+        background: var(--green);
+    }
+
+    &__slide-2 {
+        background: var(--black);
+    }
+
+    &__slide-3 {
+        background: var(--light-green);
+    }
+
+    &__slide-4 {
+        background: var(--green);
+    }
+
+    &__slide-5 {
+       background-color: #111;
+    }
+    &__block {
+        border-radius: 25px;
+        width: 335px;
+        height: 335px;
+        @media screen and (min-width: 768px) {
+            border-radius: 100px;
+                width: 704px;
+                height: 704px;
+        }
+    }
 }
