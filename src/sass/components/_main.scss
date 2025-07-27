@@ -1,0 +1,24 @@
+.main {
+    &__fixer {
+        display: flex;
+    }
+    &__button {
+        display: block;
+        font-family: var(--font-family);
+            font-weight: 600;
+            border-radius: 4px;
+            background-color: black;
+            font-size: 28px;
+            line-height: 114%;
+            color: #fafafa;
+    }
+    &__title {
+        display: block;
+display: block;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 114%;
+    color: black;
+    }
+}
