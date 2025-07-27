@@ -1,0 +1,9 @@
+import "./js/header.js";
+import "./js/characters.js";
+import "./js/charactersmodal.js";
+import "./js/episodes.js";
+import "./js/episodesmodal.js";
+import "./js/explore.js";
+import "./js/hero.js";
+import "./js/main.js";
+import "./js/footer.js";
