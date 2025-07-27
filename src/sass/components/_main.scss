@@ -18,16 +18,21 @@
         display: block;
         font-family: var(--font-family);
         font-weight: 600;
-        border-radius: 4px;
+        border-radius: 400px;
         background-color: black;
         font-size: 28px;
         line-height: 114%;
         color: #fafafa;
+
         @media screen and (min-width: 768px) {
             font-size: 44px;
         }
     }
-
+    &__osnova {
+        @media screen and (min-width: 1280px) {
+            display: flex;
+        }
+    }
     &__title {
         display: block;
         font-family: var(--font-family);
@@ -35,8 +40,9 @@
         font-size: 28px;
         line-height: 114%;
         color: black;
+
         @media screen and (min-width: 768px) {
-                font-size: 44px;
+            font-size: 44px;
         }
     }
 
@@ -49,9 +55,15 @@
         font-size: 18px;
         line-height: 133%;
         color: #111;
+
         @media screen and (min-width: 768px) {
-                font-size: 16px;
-            }
+            font-size: 16px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 24px;
+            line-height: 117%;
+        }
     }
 
     &__slide-button-1,
@@ -67,14 +79,23 @@
         font-size: 14px;
         line-height: 129%;
         color: #111;
+        @media screen and (min-width:1280px) {
+            font-size: 16px;
+            line-height: 112%;
+        }
     }
 
     &__photo {
         width: 233px;
         height: 279px;
+
         @media screen and (min-width: 768px) {
             width: 395px;
             height: 627px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 365px;
+            height: 579px;
         }
     }
 
@@ -95,16 +116,23 @@
     }
 
     &__slide-5 {
-       background-color: #111;
+        background-color: #111;
     }
+
     &__block {
         border-radius: 25px;
         width: 335px;
         height: 335px;
+
         @media screen and (min-width: 768px) {
             border-radius: 100px;
-                width: 704px;
-                height: 704px;
+            width: 704px;
+            height: 704px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 504px;
+            height: 644px;
         }
     }
 }
