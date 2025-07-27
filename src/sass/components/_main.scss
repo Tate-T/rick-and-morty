@@ -1,3 +1,12 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Poppins", sans-serif;
+}
+:root {
+	--black: #0d171d;
+	--green: #a1d737;
+	--light-green: #daf836;
+}
 .main {
     &__fixer {
         display: flex;
@@ -13,12 +22,32 @@
             color: #fafafa;
     }
     &__title {
-        display: block;
-display: block;
+    display: block;
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 28px;
     line-height: 114%;
     color: black;
     }
+    &__slide-button-1,
+    &__slide-button-2,
+    &__slide-button-3,
+    &__slide-button-4
+    &__slide-button-5 {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 133%;
+color: #111;
+}
+&__slide-button-1,
+    &__slide-button-2,
+    &__slide-button-3,
+    &__slide-button-4
+    &__slide-button-5:hover {
+color: var(--green);
+}
+&__text {
+    
+}
 }
