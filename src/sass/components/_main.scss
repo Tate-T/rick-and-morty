@@ -10,8 +10,26 @@
 }
 
 .main {
+    margin-bottom: 80px;
+    margin-top: 84px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 146px;
+        margin-bottom: 120px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 132px;
+        margin-bottom: 113px;
+    }
+
     &__fixer {
         display: flex;
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 64px;
+        }
     }
 
     &__button {
@@ -28,11 +46,14 @@
             font-size: 44px;
         }
     }
+
     &__osnova {
         @media screen and (min-width: 1280px) {
             display: flex;
+            gap: 54px;
         }
     }
+
     &__title {
         display: block;
         font-family: var(--font-family);
@@ -49,12 +70,16 @@
     &__slide-button-1,
     &__slide-button-2,
     &__slide-button-3,
-    &__slide-button-4 &__slide-button-5 {
+    &__slide-button-4,
+    &__slide-button-5 {
         font-family: var(--font-family);
         font-weight: 600;
         font-size: 18px;
         line-height: 133%;
         color: #111;
+        margin-bottom: 16px;
+        border: none;
+        background-color: transparent;
 
         @media screen and (min-width: 768px) {
             font-size: 16px;
@@ -66,12 +91,13 @@
         }
     }
 
-    &__slide-button-1,
-    &__slide-button-2,
-    &__slide-button-3,
-    &__slide-button-4 &__slide-button-5:hover {
-        color: var(--green);
-    }
+    // &__slide-button-1
+    // &__slide-button-2
+    // &__slide-button-3
+    // &__slide-button-4
+    // &__slide-button-5:hover {
+    //     color: var(--green);
+    // }
 
     &__text {
         font-family: var(--font-family);
@@ -79,6 +105,7 @@
         font-size: 14px;
         line-height: 129%;
         color: #111;
+
         @media screen and (min-width:1280px) {
             font-size: 16px;
             line-height: 112%;
@@ -93,6 +120,7 @@
             width: 395px;
             height: 627px;
         }
+
         @media screen and (min-width: 1280px) {
             width: 365px;
             height: 579px;
@@ -133,6 +161,23 @@
         @media screen and (min-width: 1280px) {
             width: 504px;
             height: 644px;
+        }
+    }
+
+    &__links {
+        margin-top: 32px;
+        @media screen and (min-width: 1280px) {
+            margin-top: 0;
+        }
+    }
+
+    &__line {
+        margin-top: 14px;
+        margin-bottom: 28px;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 16px;
+            margin-bottom: 27px;
         }
     }
 }

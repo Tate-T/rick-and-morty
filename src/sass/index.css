@@ -513,8 +513,30 @@ button {
   --light-green: #daf836;
 }
 
+.main {
+  margin-bottom: 80px;
+  margin-top: 84px;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    margin-top: 146px;
+    margin-bottom: 120px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main {
+    margin-top: 146px;
+    margin-bottom: 120px;
+  }
+}
 .main__fixer {
   display: flex;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .main__fixer {
+    margin-bottom: 64px;
+  }
 }
 .main__button {
   display: block;
@@ -549,25 +571,28 @@ button {
     font-size: 44px;
   }
 }
-.main__slide-button-1, .main__slide-button-2, .main__slide-button-3, .main__slide-button-4 .main__slide-button-5 {
+.main__slide-button-1, .main__slide-button-2, .main__slide-button-3, .main__slide-button-4, .main__slide-button-5 {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 18px;
   line-height: 133%;
   color: #111;
+  margin-bottom: 16px;
+  border: none;
+  background-color: transparent;
 }
 @media screen and (min-width: 768px) {
-  .main__slide-button-1, .main__slide-button-2, .main__slide-button-3, .main__slide-button-4 .main__slide-button-5 {
+  .main__slide-button-1, .main__slide-button-2, .main__slide-button-3, .main__slide-button-4, .main__slide-button-5 {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .main__slide-button-1, .main__slide-button-2, .main__slide-button-3, .main__slide-button-4 .main__slide-button-5 {
+  .main__slide-button-1, .main__slide-button-2, .main__slide-button-3, .main__slide-button-4, .main__slide-button-5 {
     font-size: 24px;
     line-height: 117%;
   }
 }
-.main__slide-button-1, .main__slide-button-2, .main__slide-button-3, .main__slide-button-4 .main__slide-button-5:hover {
+.main__slide-button-1 .main__slide-button-2 .main__slide-button-3 .main__slide-button-4 .main__slide-button-5:hover {
   color: var(--green);
 }
 .main__text {
@@ -632,7 +657,19 @@ button {
     height: 644px;
   }
 }
-
+.main__links {
+  margin-top: 32px;
+}
+.main__line {
+  margin-top: 14px;
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 768px) {
+  .main__line {
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+}
 .explore {
   border-radius: 100px;
   background: #0D171D;
