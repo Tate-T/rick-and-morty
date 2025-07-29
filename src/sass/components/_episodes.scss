@@ -1,90 +1,164 @@
 .episodes {
-display: flex;
-    justify-content: center;
-    align-items: center;
 
-&__container {
+  &__container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 64px;
+
+    @media screen and (min-width: 321px) {
+      justify-content: center;
+      align-items: center;
+    }
+  
+
+@media screen and (max-width: 320px) {
+    flex-direction: column;
+    padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+  }
 }
 
-&__input-container{
+  &__input-container {
     padding-right: 16px;
-}
-&__input-name {
-color: #111;
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 18px;
-}
-&__input {
-        display: flex;
-padding: 12px 24px;
-justify-content: center;
-align-items: center;
-gap: 72px;
-border-radius: 100px;
-border: 1.5px solid #111;
-background: #DAF836;
+    padding-left: 16px;
 
-&::placeholder {
-  color: #111;
-  font-family: Montserrat, sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
+@media screen and (max-width: 320px) {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+  }
 }
 
-}
-
-&__input-wrapper {
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-&__svg {
-  position: absolute;
-  right: 16px;
-  bottom: 6px;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
-&__season-select-name {
+  &__input-name {
     color: #111;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    @media screen and (max-width: 320px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  }
+
+  
+  &__season-container {
+    @media screen and (max-width: 320px) {
+      width: 100%;
+    padding: 0;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+  }
+}
+
+  &__input {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    border-radius: 100px;
+    border: 1.5px solid #111;
+    background: #DAF836;
+
+    @media screen and (max-width: 320px) {
+         width: 100%;
+    box-sizing: border-box;
+    }
+
+    &::placeholder {
+      color: #111;
+      font-family: Montserrat, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+
+          @media screen and (max-width: 320px) {
+    font-size: 14px;
+  }
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    @media screen and (max-width: 320px) {
+       width: 100%;
+    position: relative;
+    }
+  }
+
+  &__svg {
+    position: absolute;
+    right: 16px;
+    bottom: 6px;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+    @media screen and (max-width: 320px) {
+    right: 20px;
+}
+  }
+
+  &__season-select-name {
+   color: #111;
+      font-family: Montserrat, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+
+    @media screen and (max-width: 320px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  }
+
+  &__season-select {
+    display: flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+    border-radius: 100px;
+    border: 1.5px solid #111;
+
+    @media screen and (max-width: 320px) {
+          width: 100%;
+    box-sizing: border-box;
+    }
+  }
+&__all-seasond{
+  color: #111;
 font-family: Montserrat;
-font-size: 14px;
+font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 18px;
+
 }
-&__season-select {
-    display: flex;
-padding: 10px 24px;
-justify-content: center;
-align-items: center;
-gap: 44px;
-border-radius: 100px;
-border: 1.5px solid #111;
-}
-&__load-more {
+  &__load-more {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    margin-bottom: 38px;
+  }
+
+  &__load-more-btn {
+    display: inline-flex;
+    padding: 12px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    border: none;
+    border-radius: 1000px;
+    background: #A1D737;
+
+  }
 }
-&__load-more-btn {
- display: inline-flex;
-padding: 12px 24px;
-align-items: flex-start;
-gap: 10px;
-border: none;
-border-radius: 1000px;
-background: #A1D737;
-}
-}
+
