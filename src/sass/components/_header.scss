@@ -24,11 +24,11 @@
     &__list {
         display: flex;
 
-        @media screen and (max-width: 320px) {
+        @media screen and (max-width: 400px) {
             display: none;
     position: absolute; // ← відв’язуємо від потоку
-    top: 100%; // під бургером
-    right: 0; // або left: 0, залежно від дизайну
+    top: 10px;
+    right: 0;
     background-color: #1a1a1a;
     padding: 10px;
     border-radius: 8px;
@@ -48,6 +48,7 @@
 
     &__button {
         background-color: #A1D737;
+        color: black;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 20px;
