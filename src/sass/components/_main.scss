@@ -1,183 +1,184 @@
-:root {
-    --font-family: "Montserrat", sans-serif;
-    --second-family: "Poppins", sans-serif;
-}
+ :root {
+     --font-family: "Montserrat", sans-serif;
+     --second-family: "Poppins", sans-serif;
+ }
 
-:root {
-    --black: #0d171d;
-    --green: #a1d737;
-    --light-green: #daf836;
-}
+ :root {
+     --black: #0d171d;
+     --green: #a1d737;
+     --light-green: #daf836;
+ }
 
-.main {
-    margin-bottom: 80px;
-    margin-top: 84px;
+ .main {
+     margin-bottom: 80px;
+     margin-top: 84px;
 
-    @media screen and (min-width: 768px) {
-        margin-top: 146px;
-        margin-bottom: 120px;
-    }
+     @media screen and (min-width: 768px) {
+         margin-top: 146px;
+         margin-bottom: 120px;
+     }
 
-    @media screen and (min-width: 1280px) {
-        margin-top: 132px;
-        margin-bottom: 113px;
-    }
+     @media screen and (min-width: 1280px) {
+         margin-top: 132px;
+         margin-bottom: 113px;
+     }
 
-    &__fixer {
-        display: flex;
-        margin-bottom: 40px;
+     &__fixer {
+         display: flex;
+         margin-bottom: 40px;
 
-        @media screen and (min-width: 768px) {
-            margin-bottom: 64px;
-        }
-    }
+         @media screen and (min-width: 768px) {
+             margin-bottom: 64px;
+         }
+     }
 
-    &__button {
-        display: block;
-        font-family: var(--font-family);
-        font-weight: 600;
-        border-radius: 400px;
-        background-color: black;
-        font-size: 28px;
-        line-height: 114%;
-        color: #fafafa;
+     &__button {
+         display: block;
+         font-family: var(--font-family);
+         font-weight: 600;
+         border-radius: 400px;
+         background-color: black;
+         font-size: 28px;
+         line-height: 114%;
+         color: #fafafa;
 
-        @media screen and (min-width: 768px) {
-            font-size: 44px;
-        }
-    }
+         @media screen and (min-width: 768px) {
+             font-size: 44px;
+         }
+     }
 
-    &__osnova {
-        @media screen and (min-width: 1280px) {
-            display: flex;
-            gap: 54px;
-        }
-    }
+     &__osnova {
+         @media screen and (min-width: 1280px) {
+             display: flex;
+             gap: 54px;
+         }
+     }
 
-    &__title {
-        display: block;
-        font-family: var(--font-family);
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 114%;
-        color: black;
+     &__title {
+         display: block;
+         font-family: var(--font-family);
+         font-weight: 600;
+         font-size: 28px;
+         line-height: 114%;
+         color: black;
 
-        @media screen and (min-width: 768px) {
-            font-size: 44px;
-        }
-    }
+         @media screen and (min-width: 768px) {
+             font-size: 44px;
+         }
+     }
 
-    &__slide-button-1,
-    &__slide-button-2,
-    &__slide-button-3,
-    &__slide-button-4,
-    &__slide-button-5 {
-        font-family: var(--font-family);
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 133%;
-        color: #111;
-        margin-bottom: 16px;
-        border: none;
-        background-color: transparent;
+     &__slide-button-1,
+     &__slide-button-2,
+     &__slide-button-3,
+     &__slide-button-4,
+     &__slide-button-5 {
+         font-family: var(--font-family);
+         font-weight: 600;
+         font-size: 18px;
+         line-height: 133%;
+         color: #111;
+         margin-bottom: 16px;
+         border: none;
+         background-color: transparent;
 
-        @media screen and (min-width: 768px) {
-            font-size: 16px;
-        }
+         @media screen and (min-width: 768px) {
+             font-size: 16px;
+         }
 
-        @media screen and (min-width: 1280px) {
-            font-size: 24px;
-            line-height: 117%;
-        }
-    }
+         @media screen and (min-width: 1280px) {
+             font-size: 24px;
+             line-height: 117%;
+         }
+     }
 
-    // &__slide-button-1
-    // &__slide-button-2
-    // &__slide-button-3
-    // &__slide-button-4
-    // &__slide-button-5:hover {
-    //     color: var(--green);
-    // }
+     // &__slide-button-1
+     // &__slide-button-2
+     // &__slide-button-3
+     // &__slide-button-4
+     // &__slide-button-5:hover {
+     //     color: var(--green);
+     // }
 
-    &__text {
-        font-family: var(--font-family);
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 129%;
-        color: #111;
+     &__text {
+         font-family: var(--font-family);
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 129%;
+         color: #111;
 
-        @media screen and (min-width:1280px) {
-            font-size: 16px;
-            line-height: 112%;
-        }
-    }
+         @media screen and (min-width:1280px) {
+             font-size: 16px;
+             line-height: 112%;
+         }
+     }
 
-    &__photo {
-        width: 233px;
-        height: 279px;
+     &__photo {
+         width: 233px;
+         height: 279px;
 
-        @media screen and (min-width: 768px) {
-            width: 395px;
-            height: 627px;
-        }
+         @media screen and (min-width: 768px) {
+             width: 395px;
+             height: 627px;
+         }
 
-        @media screen and (min-width: 1280px) {
-            width: 365px;
-            height: 579px;
-        }
-    }
+         @media screen and (min-width: 1280px) {
+             width: 365px;
+             height: 579px;
+         }
+     }
 
-    &__slide-1 {
-        background: var(--green);
-    }
+     &__slide-1 {
+         background: var(--green);
+     }
 
-    &__slide-2 {
-        background: var(--black);
-    }
+     &__slide-2 {
+         background: var(--black);
+     }
 
-    &__slide-3 {
-        background: var(--light-green);
-    }
+     &__slide-3 {
+         background: var(--light-green);
+     }
 
-    &__slide-4 {
-        background: var(--green);
-    }
+     &__slide-4 {
+         background: var(--green);
+     }
 
-    &__slide-5 {
-        background-color: #111;
-    }
+     &__slide-5 {
+         background-color: #111;
+     }
 
-    &__block {
-        border-radius: 25px;
-        width: 335px;
-        height: 335px;
+     &__block {
+         border-radius: 25px;
+         width: 335px;
+         height: 335px;
 
-        @media screen and (min-width: 768px) {
-            border-radius: 100px;
-            width: 704px;
-            height: 704px;
-        }
+         @media screen and (min-width: 768px) {
+             border-radius: 100px;
+             width: 704px;
+             height: 704px;
+         }
 
-        @media screen and (min-width: 1280px) {
-            width: 504px;
-            height: 644px;
-        }
-    }
+         @media screen and (min-width: 1280px) {
+             width: 504px;
+             height: 644px;
+         }
+     }
 
-    &__links {
-        margin-top: 32px;
-        @media screen and (min-width: 1280px) {
-            margin-top: 0;
-        }
-    }
+     &__links {
+         margin-top: 32px;
 
-    &__line {
-        margin-top: 14px;
-        margin-bottom: 28px;
+         @media screen and (min-width: 1280px) {
+             margin-top: 0;
+         }
+     }
 
-        @media screen and (min-width: 768px) {
-            margin-top: 16px;
-            margin-bottom: 27px;
-        }
-    }
+     &__line {
+         margin-top: 14px;
+         margin-bottom: 28px;
+
+         @media screen and (min-width: 768px) {
+             margin-top: 16px;
+             margin-bottom: 27px;
+         }
+     }
 }
