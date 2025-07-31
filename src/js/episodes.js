@@ -1,53 +1,149 @@
-const form = document.querySelector('.episodes');
-const input = document.querySelector('.episodes__input');
-const select = document.querySelector('.episodes__season-select');
-const list = document.querySelector('.episodes__list');
-const loadMoreBtn = document.querySelector('.episodes__load-more-btn');
+const form = document.querySelector(".episodes");
+const input = document.querySelector(".episodes__input");
+const select = document.querySelector(".episodes__season-select");
+const list = document.querySelector(".episodes__list");
+const loadMoreBtn = document.querySelector(".episodes__load-more-btn");
+const errorImage = document.querySelector(".episodes__error-image");
+const errorText = document.querySelector(".episodes__error-text");
+console.log(errorImage);
+let currentPage = 1;
 
-async function getEpisodes () {
-    try{
-        const fetching = await fetch(`https://rickandmortyapi.com/api/episode`);
-        const response = await fetching.json();
-        return response;
-    } catch (error) {
-      console.log("Не вдалось отримати серії через помилку", error)
-    }
+async function getEpisodes(currentPage) {
+  try {
+    const fetching = await fetch(
+      `https://rickandmortyapi.com/api/episode?page=${currentPage}`
+    );
+    const response = await fetching.json(g);
+    return response;
+  } catch (error) {
+    console.log("Не вдалось отримати серії через помилку", error);
+  }
 }
 
-async function renderEpisodes (episodes) {
-      return episodes.map((episode) => {
-     const season = episode.episode.slice(1, 3);
-    const maxLength = 25;
-    const shortName = episode.name.length > maxLength
-      ? episode.name.slice(0, maxLength) + '...'
-      : episode.name;
-     const seasonClass = `season-${season}`;
-    return `<li class="episodes__list-item ${seasonClass}">
-    <div class="episodes__list-boxing">
-    <h2 class="episodes__list-item-text">${shortName}</h2>
-    <div class="episodes__list-item-container">
-      <div class="episodes__list-item-div">
-        <h2 class="episodes__list-item-season">Season</h2>
-        <p class="episodes__list-item-season-number">${season}</p>
+async function renderEpisodes(episodes) {
+  return episodes
+    .map((episode) => {
+      const season = episode.episode.slice(1, 3);
+      const maxLength = 25;
+      const shortName =
+        episode.name.length > maxLength
+          ? episode.name.slice(0, maxLength) + "..."
+          : episode.name;
+      const seasonClass = `season-${season}`;
+      return `<li class="episodes__list-item data-modal-open ${seasonClass}" data-episode-id="${episode.id}">
+      <div class="episodes__list-boxing">
+        <h2 class="episodes__list-item-text">${shortName}</h2>
+        <div class="episodes__list-item-container">
+          <div class="episodes__list-item-div">
+            <h2 class="episodes__list-item-season">Season</h2>
+            <p class="episodes__list-item-season-number">${season}</p>
+          </div>
+          <div class="episodes__list-item-box">
+            <h2 class="episodes__list-item-date">Air Date</h2>
+            <p class="episodes__list-item-season-date">${episode.air_date}</p>
+          </div>
+        </div>
       </div>
-      <div class="episodes__list-item-box">
-        <h2 class="episodes__list-item-date">Air Date</h2>
-        <p class="episodes__list-item-season-date">${episode.air_date}</p>
-      </div>
-    </div>
-    </div>
-  </li>
-  `;
-}).join("")
-};
+    </li>`;
+    })
+    .join("");
+}
 
-async function addEpisodesToDOM () {
-    try {
-    const data = await getEpisodes();
+input.addEventListener("input", async () => {
+  const query = input.value.trim().toLowerCase();
+  list.innerHTML = "";
+
+  if (!query) {
+    const data = await getEpisodes(1);
+    const markup = await renderEpisodes(data.results);
+    list.innerHTML = markup;
+    currentPage = 1;
+    loadMoreBtn.disabled = false;
+    loadMoreBtn.textContent = "Load more";
+    loadMoreBtn.style.backgroundColor = "";
+    return;
+  }
+  let allEpisodes = [];
+  let page = 1;
+  while (true) {
+    const data = await getEpisodes(page);
+    if (!data || !data.results) break;
+    allEpisodes = allEpisodes.concat(data.results);
+    if (!data.info.next) break;
+    page++;
+  }
+  const filteredEpisodes = allEpisodes.filter((episode) =>
+    episode.name.toLowerCase().includes(query)
+  );
+  const markup = await renderEpisodes(filteredEpisodes);
+  list.innerHTML = markup;
+  loadMoreBtn.disabled = true;
+  loadMoreBtn.textContent = "Пошук завершено";
+  loadMoreBtn.style.backgroundColor = "#ccc";
+});
+
+select.addEventListener("change", async () => {
+  const selectedSeason = select.value;
+  list.innerHTML = "";
+
+  if (selectedSeason === "All") {
+    const data = await getEpisodes(1);
+    const markup = await renderEpisodes(data.results);
+    list.innerHTML = markup;
+
+    loadMoreBtn.disabled = false;
+    loadMoreBtn.textContent = "Load more";
+    loadMoreBtn.style.backgroundColor = "";
+    currentPage = 1;
+  } else {
+    let allEpisodes = [];
+    let page = 1;
+
+    while (true) {
+      const data = await getEpisodes(page);
+      if (!data || !data.results) break;
+      allEpisodes = allEpisodes.concat(data.results);
+      if (!data.info.next) break;
+      page++;
+    }
+
+    const filteredEpisodes = allEpisodes.filter(
+      (episode) => episode.episode.slice(1, 3) === selectedSeason
+    );
+
+    const markup = await renderEpisodes(filteredEpisodes);
+    list.innerHTML = markup;
+
+    loadMoreBtn.disabled = true;
+    loadMoreBtn.textContent = "Фільтрація за сезоном";
+    loadMoreBtn.style.backgroundColor = "#ccc";
+  }
+});
+
+loadMoreBtn.addEventListener("click", async () => {
+  currentPage++;
+  const newEpisodes = await getEpisodes(currentPage);
+
+  if (!newEpisodes || !newEpisodes.results) {
+    loadMoreBtn.disabled = true;
+    loadMoreBtn.textContent = "Епізоди закінчились";
+    loadMoreBtn.style.backgroundColor = "#ccc";
+    return;
+  }
+
+  const newMarkup = await renderEpisodes(newEpisodes.results);
+  list.innerHTML += newMarkup;
+});
+async function addEpisodesToDOM() {
+  try {
+    const data = await getEpisodes(currentPage);
     const markup = await renderEpisodes(data.results);
     list.innerHTML = markup;
   } catch (error) {
     console.log("Помилка при рендері серій", error);
+    errorImage.style.display = "block";
+    errorText.style.display = "block";
+    loadMoreBtn.style.display = "none";
   }
 }
 
