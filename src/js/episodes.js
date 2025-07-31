@@ -13,7 +13,7 @@ async function getEpisodes(currentPage) {
     const fetching = await fetch(
       `https://rickandmortyapi.com/api/episode?page=${currentPage}`
     );
-    const response = await fetching.json(g);
+    const response = await fetching.json();
     return response;
   } catch (error) {
     console.log("Не вдалось отримати серії через помилку", error);
