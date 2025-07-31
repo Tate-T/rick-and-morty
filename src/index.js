@@ -5,5 +5,7 @@ import "./js/episodes.js";
 import "./js/episodesmodal.js";
 import "./js/explore.js";
 import "./js/hero.js";
+import "./js/characters-hero.js";
+import "./js/episodes-hero.js";
 import "./js/main.js";
 import "./js/footer.js";
