@@ -144,14 +144,17 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 36px;
+    gap: 16px;
     column-gap: 32px;
+    margin-bottom: 64px;
 
-            @media screen and (max-width: 860px) {
-    margin-right: 32px;
-    margin-left: 32px;
+    @media screen and (max-width: 860px) {
+      gap: 32px;
     }
 
+    @media screen and (max-width: 320px) {
+      margin-bottom: 41px;
+    }
   }
 
   &__list-item {
@@ -160,24 +163,27 @@
     flex-shrink: 0;
     border-radius: 20px;
     border: 2px solid #9eff00;
-    margin-bottom: 36px;
-    margin-right: 16px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
-    background: #0D171D;
+    background: #0d171d;
 
-        @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       width: 336px;
-height: 250px;
-flex-shrink: 0;
-margin-right: 32px;
-margin-bottom: 32px;
+      height: 250px;
+      flex-shrink: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
-
+    @media screen and (max-width: 768px) {
+      width: 300px;
+      height: 250px;
+      flex-shrink: 0;
+    }
   }
   &__list-item-text {
     color: #a1d737;
@@ -190,28 +196,27 @@ margin-bottom: 32px;
     margin-top: 20px;
   }
 
-  &__list-boxing{
-display: flex;
-width: 244px;
-flex-direction: column;
-align-items: flex-start;
-gap: 106px;
-
-        @media screen and (max-width: 768px) {
-display: flex;
-width: 296px;
-flex-direction: column;
-align-items: flex-start;
-gap: 156px;
-    }
-       @media screen and (max-width: 320px) {
+  &__list-boxing {
     display: flex;
-width: 295px;
-flex-direction: column;
-align-items: flex-start;
-gap: 156px;
-    }
+    width: 244px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 106px;
 
+    @media screen and (max-width: 768px) {
+      display: flex;
+      width: 296px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 156px;
+    }
+    @media screen and (max-width: 320px) {
+      display: flex;
+      width: 295px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 156px;
+    }
   }
   &__list-item-container {
     margin-left: 20px;
@@ -282,10 +287,50 @@ gap: 156px;
     border-radius: 1000px;
     background: #a1d737;
   }
+
+  &__error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 128px;
+
+    @media screen and (max-width: 320px) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__error-image {
+    display: none;
+    width: 388px;
+    height: 358px;
+    flex-shrink: 0;
+
+    @media screen and (max-width: 320px) {
+      width: 283px;
+      height: 262px;
+    }
+  }
+
+  &__error-text {
+    display: none;
+    color: #111;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+    @media screen and (max-width: 320px) {
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0.32px;
+    }
+  }
 }
 
 .season-01 {
-  background-image: url("../img/seasons/rgfb.png");
+  background-image: url("../img/seasons/first.png");
 }
 
 .season-02 {

@@ -41,20 +41,25 @@
         >Episode code</label
       >
       <select name="episodes__season-select" class="episodes__season-select">
-        <option class="episodes__all-seasond" value="All seasons">
-          All seasons
-        </option>
-        <option value="1 season">1 season</option>
-        <option value="2 season">2 season</option>
-        <option value="3 season">3 season</option>
-        <option value="4 season">4 season</option>
-        <option value="5 season">5 season</option>
-        <option value="6 season">6 season</option>
+        <option class="episodes__all-seasond" value="All">All seasons</option>
+        <option value="01">1 season</option>
+        <option value="02">2 season</option>
+        <option value="03">3 season</option>
+        <option value="04">4 season</option>
+        <option value="05">5 season</option>
       </select>
     </div>
   </div>
 </form>
 <ul class="episodes__list"></ul>
+<div class="episodes__error">
+  <img
+    class="episodes__error-image"
+    src="./img/portal-error.webp"
+    alt="Error"
+  />
+  <p class="episodes__error-text">Oops! Try looking for something else...</p>
+</div>
 <div class="episodes__load-more">
   <button class="episodes__load-more-btn">Load more</button>
 </div>

@@ -10,8 +10,6 @@
   position: relative;
   box-sizing: border-box;
 
-
-
   @media screen and (max-width: 320px) {
     padding: 30px 16px;
     max-width: 100%;
@@ -125,10 +123,9 @@
   &__characters-container {
     display: flex;
 
-
-        @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       gap: 20px;
-      
+
       flex-wrap: wrap;
     }
     @media screen and (max-width: 450px) {
@@ -176,7 +173,7 @@
     width: 60px;
     height: 60px;
     flex-shrink: 0;
-    margin-right: 14px;
+    margin-right: 4px;
     border-radius: 8px;
 
     @media screen and (max-width: 768px) {
@@ -206,7 +203,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-@media screen and (max-width: 320px) {
+    @media screen and (max-width: 320px) {
       top: 8px;
       right: 8px;
     }
@@ -214,4 +211,31 @@
       fill: #caff33;
     }
   }
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop-episodes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+body.show-modal .backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+.no-scroll {
+  overflow: hidden;
 }
