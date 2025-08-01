@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang=en><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Document</title><link rel=stylesheet href=/rick-and-morty/characters-page.c334219e.css><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;family=Poppins&amp;display=swap" rel=stylesheet><body>
+<!DOCTYPE html><html lang=en><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Document</title><link rel=stylesheet href=/rick-and-morty/characters-page.345ff74d.css><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;family=Poppins&amp;display=swap" rel=stylesheet><body>
     <header class=header>
     <div class=container>
     <div class=header__flex-elements>
@@ -39,7 +39,8 @@
     </button>
 </div>
 </section>
-    <section class=main>
+    
+<section class=main>
     <div class=container>
         <div class=main__fixer>
             <button class=main__button>Main</button>
@@ -232,7 +233,8 @@
   </div>
 </div>
 
-    <form class=episodes>
+    <section class=episodes>
+<form class=episodes__form>
   <div class=episodes__container>
     <div class=episodes__input-container>
       <div class=episodes__input-wrapper>
@@ -242,70 +244,75 @@
         </label>
       </div>
     </div>
-    <div class=episodes__season-container>
-      <label for=episodes__season-select class=episodes__season-select-name>Episode code</label>
-      <select name=episodes__season-select class=episodes__season-select>
-        <option class=episodes__all-seasond value="All seasons">
-          All seasons
-        </option>
-        <option value="1 season">1 season</option>
-        <option value="2 season">2 season</option>
-        <option value="3 season">3 season</option>
-        <option value="4 season">4 season</option>
-        <option value="5 season">5 season</option>
-        <option value="6 season">6 season</option>
-      </select>
-    </div>
+   <div class=episodes__custom-select>
+    <p class=episodes__season-select-name>Episode code</p>
+  <div class=episodes__custom-select-trigger>All seasons</div>
+  <div class=episodes__custom-select-options>
+    <div class=episodes__custom-select-option data-value=All>All</div>
+    <div class=episodes__custom-select-option data-value=01>1 Season</div>
+    <div class=episodes__custom-select-option data-value=02>2 Season</div>
+    <div class=episodes__custom-select-option data-value=03>3 Season</div>
+    <div class=episodes__custom-select-option data-value=04>4 Season</div>
+    <div class=episodes__custom-select-option data-value=05>5 Season</div>
+  </div>
+</div>
   </div>
 </form>
 <ul class=episodes__list></ul>
+<div class=episodes__error>
+  <img class=episodes__error-image src=/rick-and-morty/portal-error.a8bde21b.webp alt=Error>
+  <p class=episodes__error-text>Oops! Try looking for something else...</p>
+</div>
 <div class=episodes__load-more>
   <button class=episodes__load-more-btn>Load more</button>
 </div>
-
-    <div class=episodes-modal>
-           <button class=episodes-modal__close-button>
-            <svg xmlns:xmlns=http://www.w3.org/2000/svg width=22 height=22 fill=none viewBox="0 0 22 22"><path stroke=#a1d737 stroke-linecap=round stroke-linejoin=round stroke-width=1.5 d="m16.5 5.5-11 11M5.5 5.5l11 11"/></svg>
-        </button>
-  <div class=episodes-modal__fake-container>
-    <h2 class=episodes-modal__series-name>Pilot</h2>
-    <div class=episodes-modal__series>
-      <div class=episodes-modal__id-container>
-        <p class=episodes-modal__series-id>Id</p>
-        <h3 class=episodes-modal__series-name-id>000</h3>
+</section>
+    <div class="backdrop-episodes data-modal is-hidden">
+  <div class=episodes-modal>
+    <button class="data-modal-close episodes-modal__close-button">
+      <svg xmlns:xmlns=http://www.w3.org/2000/svg width=22 height=22 fill=none viewBox="0 0 22 22"><path stroke=#a1d737 stroke-linecap=round stroke-linejoin=round stroke-width=1.5 d="m16.5 5.5-11 11M5.5 5.5l11 11"/></svg>
+    </button>
+    <div class=episodes-modal__fake-container>
+      <h2 class=episodes-modal__series-name>Pilot</h2>
+      <div class=episodes-modal__series>
+        <div class=episodes-modal__id-container>
+          <p class=episodes-modal__series-id>Id</p>
+          <h3 class=episodes-modal__series-name-id>000</h3>
+        </div>
+        <div class=episodes-modal__date-container>
+          <p class=episodes-modal__series-air-date>Air date</p>
+          <h3 class=episodes-modal__series-date>December 2, 2013</h3>
+        </div>
       </div>
-      <div class=episodes-modal__date-container>
-        <p class=episodes-modal__series-air-date>Air date</p>
-        <h3 class=episodes-modal__series-date>December 2, 2013</h3>
-      </div>
-    </div>
 
-    <h2 class=episodes-modal__characters>Characters</h2>
+      <h2 class=episodes-modal__characters>Characters</h2>
 
-    <div class=episodes-modal__major-container>
-      <h3 class=episodes-modal__major-characters>Major Characters</h3>
+      <div class=episodes-modal__major-container>
+        <h3 class=episodes-modal__major-characters>Major Characters</h3>
 
-      <div class=episodes-modal__characters-container>
-        <div class=episodes-modal__characters-card>
-          <img class=episodes-modal__characters-image src=/rick-and-morty/rick-2.e8cbe482.webp alt=rick>
-          <h3 class=episodes-modal__characters-name>Rick</h3>
-        </div>
-        <div class=episodes-modal__characters-card>
-          <img class=episodes-modal__characters-image src=/rick-and-morty/morty.fe133b71.webp alt=morty>
-          <h3 class=episodes-modal__characters-name>Morty</h3>
-        </div>
-        <div class=episodes-modal__characters-card>
-          <img class=episodes-modal__characters-image src=/rick-and-morty/beth.32026a54.webp alt=beth>
-          <h3 class=episodes-modal__characters-name>Beth</h3>
-        </div>
-        <div class=episodes-modal__characters-card>
-          <img class=episodes-modal__characters-image src=/rick-and-morty/jerry.7a606417.webp alt=jerry>
-          <h3 class=episodes-modal__characters-name>Jerry</h3>
+        <div class=episodes-modal__characters-container>
+          <div class=episodes-modal__characters-card>
+            <img class=episodes-modal__characters-image src=/rick-and-morty/rick-2.e8cbe482.webp alt=rick>
+            <h3 class=episodes-modal__characters-name>Rick</h3>
+          </div>
+          <div class=episodes-modal__characters-card>
+            <img class=episodes-modal__characters-image src=/rick-and-morty/morty.fe133b71.webp alt=morty>
+            <h3 class=episodes-modal__characters-name>Morty</h3>
+          </div>
+          <div class=episodes-modal__characters-card>
+            <img class=episodes-modal__characters-image src=/rick-and-morty/beth.32026a54.webp alt=beth>
+            <h3 class=episodes-modal__characters-name>Beth</h3>
+          </div>
+          <div class=episodes-modal__characters-card>
+            <img class=episodes-modal__characters-image src=/rick-and-morty/jerry.7a606417.webp alt=jerry>
+            <h3 class=episodes-modal__characters-name>Jerry</h3>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-    <script type=module src=/rick-and-morty/characters-page.e9093ba0.js></script>
+
+    <script type=module src=/rick-and-morty/characters-page.4131b2a9.js></script>
 
 
