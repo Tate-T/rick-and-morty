@@ -1,7 +1,14 @@
 .episodes {
+   margin-bottom: 64px;
+    margin-top: 64px;
+
+    &__form {
+      
+   margin-bottom: 64px;
+    }
   &__container {
     display: flex;
-    margin-bottom: 64px;
+   
 
     @media screen and (min-width: 321px) {
       justify-content: center;
@@ -53,13 +60,19 @@
 
   &__input {
     display: flex;
-    padding: 12px 24px;
+    padding: 16px 24px;
+
     justify-content: center;
     align-items: center;
-    gap: 72px;
     border-radius: 100px;
     border: 1.5px solid #111;
     background: #daf836;
+    margin-top: 8px;
+
+        @media screen and (max-width: 460px) {
+      width: 167px;
+      box-sizing: border-box;
+    }
 
     @media screen and (max-width: 320px) {
       width: 100%;
@@ -84,10 +97,6 @@
     position: relative;
     width: 100%;
     align-items: center;
-    @media screen and (max-width: 320px) {
-      width: 100%;
-      position: relative;
-    }
   }
 
   &__svg {
@@ -109,6 +118,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
+    margin-bottom: 8px;
 
     @media screen and (max-width: 320px) {
       font-size: 12px;
@@ -130,6 +140,100 @@
       box-sizing: border-box;
     }
   }
+
+
+&__custom-select {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
+  z-index: 20;
+}
+
+&__custom-select-trigger {
+  width: 143px;
+  position: relative;
+    display: flex;
+    padding: 16px 24px;
+    justify-content: start;
+    align-items: center;
+    border-radius: 100px;
+    border: 1.5px solid #111;
+
+        @media screen and (max-width: 460px) {
+      width: 100px;
+    }
+
+    @media screen and (max-width: 320px) {
+      width: 100%;
+      box-sizing: border-box;
+      gap: 0;
+      justify-content: space-between;
+    }
+}
+
+&__custom-select-trigger::after {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  content: '';
+  width: 14px;
+  height: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' stroke='%23111111' stroke-width='2'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+&__custom-select.open &__custom-select-trigger::after {
+  transform: rotate(180deg);
+}
+
+&__custom-select-options {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+&__custom-select.open &__custom-select-options {
+  display: flex;
+  max-height: 300px;
+  opacity: 1;
+}
+
+&__custom-select-option {
+font-family: Montserrat;
+  padding: 10px 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(17, 17, 17, 0.30);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+&__custom-select-option:hover {
+  background-color: #f5f5f5;
+  color: #111;
+}
+
+&__custom-select-option.active {
+  color: #A1D737;
+  font-weight: 600;
+  background-color: #f0fdf4;
+}
+
   &__all-seasond {
     color: #111;
     font-family: Montserrat;
@@ -146,7 +250,7 @@
     flex-wrap: wrap;
     gap: 16px;
     column-gap: 32px;
-    margin-bottom: 64px;
+      margin-bottom: 64px;
 
     @media screen and (max-width: 860px) {
       gap: 32px;
@@ -289,19 +393,26 @@
   }
 
   &__error {
+    display: none;
+  }
+
+  &__error.active {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 128px;
+    margin-bottom: 64px;
 
     @media screen and (max-width: 320px) {
-      margin-bottom: 80px;
+      margin-bottom: 16px;
     }
   }
 
-  &__error-image {
-    display: none;
+    &__error-image {
+   display: none;
+  }
+
+  &__error-image.active {
     width: 388px;
     height: 358px;
     flex-shrink: 0;
@@ -327,6 +438,8 @@
       letter-spacing: 0.32px;
     }
   }
+
+  
 }
 
 .season-01 {

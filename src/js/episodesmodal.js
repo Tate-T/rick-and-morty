@@ -58,7 +58,7 @@ async function openModal(episodeId) {
     modal.classList.remove("is-hidden");
   } catch (error) {
     console.error(
-      "Не вдалось отримати інформацію епізода через помилку:",
+      "Не вдалось відкрити модальне вікно через помилку:",
       error
     );
   }

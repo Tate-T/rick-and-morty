@@ -1,12 +1,73 @@
 const form = document.querySelector(".episodes");
 const input = document.querySelector(".episodes__input");
-const select = document.querySelector(".episodes__season-select");
 const list = document.querySelector(".episodes__list");
 const loadMoreBtn = document.querySelector(".episodes__load-more-btn");
 const errorImage = document.querySelector(".episodes__error-image");
 const errorText = document.querySelector(".episodes__error-text");
-console.log(errorImage);
+const errorContainer = document.querySelector(".episodes__error");
+const customSelect = document.querySelector(".episodes__custom-select");
+const trigger = customSelect.querySelector(".episodes__custom-select-trigger");
+const optionsContainer = customSelect.querySelector(".episodes__custom-select-options");
+const options = customSelect.querySelectorAll(".episodes__custom-select-option");
 let currentPage = 1;
+let selectedSeason = "All";
+
+trigger.addEventListener("click", () => {
+  customSelect.classList.toggle("open");
+});
+
+options.forEach(option => {
+  option.addEventListener("click", async () => {
+    const value = option.getAttribute("data-value");
+    const label = option.textContent;
+    selectedSeason = value;
+    trigger.textContent = label;
+    customSelect.classList.remove("open");
+    options.forEach(option => option.classList.remove("active"));
+    option.classList.add("active");
+    list.innerHTML = "";
+
+    if (value === "All") {
+      const data = await getEpisodes(1);
+      const markup = await renderEpisodes(data.results);
+      list.innerHTML = markup;
+
+      loadMoreBtn.disabled = false;
+      loadMoreBtn.textContent = "Load more";
+      loadMoreBtn.style.backgroundColor = "";
+      currentPage = 1;
+    } else {
+      let allEpisodes = [];
+      let page = 1;
+
+      while (true) {
+        const data = await getEpisodes(page);
+        if (!data || !data.results) break;
+        allEpisodes = allEpisodes.concat(data.results);
+        if (!data.info.next) break;
+        page++;
+      }
+
+      const filteredEpisodes = allEpisodes.filter(
+        (episode) => episode.episode.slice(1, 3) === value
+      );
+
+      const markup = await renderEpisodes(filteredEpisodes);
+      list.innerHTML = markup;
+
+      loadMoreBtn.disabled = true;
+      loadMoreBtn.textContent = "Фільтрація за сезоном";
+      loadMoreBtn.style.backgroundColor = "#ccc";
+    }
+  });
+});
+
+document.addEventListener("click", (e) => {
+  if (!customSelect.contains(e.target)) {
+    customSelect.classList.remove("open");
+  }
+});
+
 
 async function getEpisodes(currentPage) {
   try {
@@ -82,43 +143,6 @@ input.addEventListener("input", async () => {
   loadMoreBtn.style.backgroundColor = "#ccc";
 });
 
-select.addEventListener("change", async () => {
-  const selectedSeason = select.value;
-  list.innerHTML = "";
-
-  if (selectedSeason === "All") {
-    const data = await getEpisodes(1);
-    const markup = await renderEpisodes(data.results);
-    list.innerHTML = markup;
-
-    loadMoreBtn.disabled = false;
-    loadMoreBtn.textContent = "Load more";
-    loadMoreBtn.style.backgroundColor = "";
-    currentPage = 1;
-  } else {
-    let allEpisodes = [];
-    let page = 1;
-
-    while (true) {
-      const data = await getEpisodes(page);
-      if (!data || !data.results) break;
-      allEpisodes = allEpisodes.concat(data.results);
-      if (!data.info.next) break;
-      page++;
-    }
-
-    const filteredEpisodes = allEpisodes.filter(
-      (episode) => episode.episode.slice(1, 3) === selectedSeason
-    );
-
-    const markup = await renderEpisodes(filteredEpisodes);
-    list.innerHTML = markup;
-
-    loadMoreBtn.disabled = true;
-    loadMoreBtn.textContent = "Фільтрація за сезоном";
-    loadMoreBtn.style.backgroundColor = "#ccc";
-  }
-});
 
 loadMoreBtn.addEventListener("click", async () => {
   currentPage++;
@@ -139,9 +163,14 @@ async function addEpisodesToDOM() {
     const data = await getEpisodes(currentPage);
     const markup = await renderEpisodes(data.results);
     list.innerHTML = markup;
+    errorContainer.classList.remove("active");
+    errorImage.classList.remove("active");
+    errorText.style.display = "none";
+    loadMoreBtn.style.display = "inline-flex";
   } catch (error) {
     console.log("Помилка при рендері серій", error);
-    errorImage.style.display = "block";
+    errorContainer.classList.add("active");
+    errorImage.classList.add("active");
     errorText.style.display = "block";
     loadMoreBtn.style.display = "none";
   }
