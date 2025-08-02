@@ -42,7 +42,7 @@ options.forEach(option => {
 
       while (true) {
         const data = await getEpisodes(page);
-        if (!data || !data.results) break;
+        if (!data  !data.results) break;
         allEpisodes = allEpisodes.concat(data.results);
         if (!data.info.next) break;
         page++;
@@ -119,6 +119,7 @@ input.addEventListener("input", async () => {
     const markup = await renderEpisodes(data.results);
     list.innerHTML = markup;
     currentPage = 1;
+    
     loadMoreBtn.disabled = false;
     loadMoreBtn.textContent = "Load more";
     loadMoreBtn.style.backgroundColor = "";
@@ -128,7 +129,7 @@ input.addEventListener("input", async () => {
   let page = 1;
   while (true) {
     const data = await getEpisodes(page);
-    if (!data || !data.results) break;
+    if (!data  !data.results) break;
     allEpisodes = allEpisodes.concat(data.results);
     if (!data.info.next) break;
     page++;
