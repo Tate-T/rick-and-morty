@@ -1,20 +1,29 @@
 .footer {
     padding-top: 64px;
     padding-bottom: 16px;
-    @media screen and (max-width: 1200px) {
 
-    }
+    @media screen and (max-width: 1200px) {}
 
     &__block {
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 460px) {
+            flex-direction: column;
+        }
     }
 
     &__image {
         width: 99px;
         height: 84px;
         flex-shrink: 0;
+
+        @media screen and (max-width: 460px) {
+            width: 71px;
+            height: 60px;
+            margin-left: 30px;
+        }
+
     }
 
     &__rick {
@@ -34,6 +43,10 @@
         flex-shrink: 0;
         border-radius: 25px;
         background: #0D171D;
+        @media screen and (max-width: 460px) {
+            font-size: 18px;
+            line-height: 18px;
+    }
     }
 
 
@@ -67,24 +80,30 @@
         gap: 16px;
         margin-left: 331px;
         margin-right: 252px;
+
         @media screen and (max-width: 1200px) {
             margin-left: 96px;
-        margin-right: 78px;
-    }
-    @media screen and (max-width: 768px) {
+            margin-right: 78px;
+        }
+
+        @media screen and (max-width: 768px) {
             margin-left: 0px;
-        margin-right: 0px;
-        margin-bottom: 20px;
-    }
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
     }
 
     &__links__svg {
         display: flex;
+
         @media screen and (max-width: 768px) {
             flex-direction: column;
             justify-content: start;
-            margin-left: 42px;
-    }
+        }
+        @media screen and (max-width: 460px) {
+            align-items: center;
+            margin-top: 42px;
+        }
     }
 
     &__link {
@@ -101,9 +120,10 @@
         display: flex;
         align-items: flex-start;
         gap: 32px;
+
         @media screen and (max-width: 768px) {
             gap: 12px;
-    }
+        }
     }
 
     &__twitter__fix {

@@ -13,6 +13,11 @@
         border-radius: 80px;
     }
 
+    @media screen and (max-width: 768px) {
+        width: 375px;
+        border-radius: 50px;
+    }
+
     &__text {
         width: 610px;
         color: #FAFAFA;
@@ -25,6 +30,14 @@
 
         @media screen and (max-width: 786px) {
             padding-top: 80px;
+            color: #FAFAFA;
+            font-family: Montserrat;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px;
+            /* 114.286% */
+            width: 306px;
         }
     }
 
@@ -49,6 +62,9 @@
         line-height: 18px;
         /* 128.571% */
         border: none;
+        @media screen and (max-width: 1200px) {
+            margin-right: 42px;
+        }
     }
 
     &__button__box {
