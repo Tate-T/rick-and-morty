@@ -22,7 +22,6 @@ options.forEach(option => {
     const label = option.textContent;
     selectedSeason = value;
     trigger.textContent = label;
-    customSelect.classList.remove("open");
     options.forEach(option => option.classList.remove("active"));
     option.classList.add("active");
     list.innerHTML = "";
@@ -42,7 +41,7 @@ options.forEach(option => {
 
       while (true) {
         const data = await getEpisodes(page);
-        if (!data  !data.results) break;
+        if (!data || !data.results) break;
         allEpisodes = allEpisodes.concat(data.results);
         if (!data.info.next) break;
         page++;
@@ -119,7 +118,6 @@ input.addEventListener("input", async () => {
     const markup = await renderEpisodes(data.results);
     list.innerHTML = markup;
     currentPage = 1;
-    
     loadMoreBtn.disabled = false;
     loadMoreBtn.textContent = "Load more";
     loadMoreBtn.style.backgroundColor = "";
@@ -129,7 +127,7 @@ input.addEventListener("input", async () => {
   let page = 1;
   while (true) {
     const data = await getEpisodes(page);
-    if (!data  !data.results) break;
+    if (!data || !data.results) break;
     allEpisodes = allEpisodes.concat(data.results);
     if (!data.info.next) break;
     page++;
@@ -178,3 +176,66 @@ async function addEpisodesToDOM() {
 }
 
 addEpisodesToDOM();
+
+
+let allEpisodes = [];
+
+async function loadAllEpisodesOnce() {
+  let page = 1;
+  let episodes = [];
+  while (true) {
+    const data = await getEpisodes(page);
+    if (!data || !data.results) break;
+    episodes = episodes.concat(data.results);
+    if (!data.info.next) break;
+    page++;
+  }
+  allEpisodes = episodes;
+}
+loadAllEpisodesOnce();
+
+function createEpisodesListForSeason(seasonValue) {
+  const filteredEpisodes = allEpisodes.filter(ep => ep.episode.slice(1, 3) === seasonValue);
+
+  const container = document.createElement("div");
+  container.classList.add("episodes__custom-suboptions");
+  container.style.marginLeft = "20px";
+
+  filteredEpisodes.forEach(ep => {
+    const epDiv = document.createElement("div");
+    epDiv.classList.add("episodes__custom-select-option", "episode-option");
+    epDiv.textContent = ep.name;
+    epDiv.dataset.episodeId = ep.id;
+
+    epDiv.addEventListener("click", async (e) => {
+      e.stopPropagation();
+      const markup = await renderEpisodes([ep]);
+      list.innerHTML = markup;
+    });
+
+    container.appendChild(epDiv);
+  });
+
+  return container;
+}
+options.forEach(option => {
+  option.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const value = option.getAttribute("data-value");
+    const nextElem = option.nextElementSibling;
+    if (nextElem && nextElem.classList.contains("episodes__custom-suboptions")) {
+      nextElem.remove();
+      return;
+    }
+    const openedSubs = customSelect.querySelectorAll(".episodes__custom-suboptions");
+    openedSubs.forEach(sub => sub.remove());
+
+    if (value !== "All") {
+      const episodesList = createEpisodesListForSeason(value);
+      option.after(episodesList);
+    }
+
+  });
+});
+
