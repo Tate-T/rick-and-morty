@@ -57,10 +57,7 @@ async function openModal(episodeId) {
     body.classList.add("show-modal", "no-scroll");
     modal.classList.remove("is-hidden");
   } catch (error) {
-    console.error(
-      "Не вдалось відкрити модальне вікно через помилку:",
-      error
-    );
+    console.error("Не вдалось відкрити модальне вікно через помилку:", error);
   }
 }
 
