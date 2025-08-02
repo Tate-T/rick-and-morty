@@ -1,4 +1,5 @@
-<form class="episodes">
+<section class="episodes">
+<form class="episodes__form">
   <div class="episodes__container">
     <div class="episodes__input-container">
       <div class="episodes__input-wrapper">
@@ -36,19 +37,18 @@
         </label>
       </div>
     </div>
-    <div class="episodes__season-container">
-      <label for="episodes__season-select" class="episodes__season-select-name"
-        >Episode code</label
-      >
-      <select name="episodes__season-select" class="episodes__season-select">
-        <option class="episodes__all-seasond" value="All">All seasons</option>
-        <option value="01">1 season</option>
-        <option value="02">2 season</option>
-        <option value="03">3 season</option>
-        <option value="04">4 season</option>
-        <option value="05">5 season</option>
-      </select>
-    </div>
+   <div class="episodes__custom-select">
+    <p class="episodes__season-select-name">Episode code</p>
+  <div class="episodes__custom-select-trigger">All seasons</div>
+  <div class="episodes__custom-select-options">
+    <div class="episodes__custom-select-option" data-value="All">All</div>
+    <div class="episodes__custom-select-option" data-value="01">1 Season</div>
+    <div class="episodes__custom-select-option" data-value="02">2 Season</div>
+    <div class="episodes__custom-select-option" data-value="03">3 Season</div>
+    <div class="episodes__custom-select-option" data-value="04">4 Season</div>
+    <div class="episodes__custom-select-option" data-value="05">5 Season</div>
+  </div>
+</div>
   </div>
 </form>
 <ul class="episodes__list"></ul>
@@ -63,3 +63,4 @@
 <div class="episodes__load-more">
   <button class="episodes__load-more-btn">Load more</button>
 </div>
+</section>
