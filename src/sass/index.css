@@ -1,3 +1,4 @@
+@charset "UTF-8";
 img {
   display: block;
   width: 100%;
@@ -361,31 +362,55 @@ body {
 }
 
 .header {
+  padding-top: 24px;
   background: #0D171D;
 }
 .header__flex-elements {
   display: flex;
 }
-.header__list {
-  display: flex;
-  margin-left: 20px;
+.header__burger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
 }
 @media screen and (min-width: 768px) {
-  .header__list {
-    margin-left: 32px;
+  .header__burger {
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
+  .header__burger {
+    display: none;
+  }
+}
+.header__list {
+  display: flex;
+}
+@media screen and (max-width: 400px) {
   .header__list {
-    margin-left: 128px;
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 10;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header__list.active {
+    display: flex;
   }
 }
 .header__button {
   background-color: #A1D737;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-  padding-right: 24px;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: none;
   border-radius: 1000px;
   font-family: Montserrat;
@@ -400,6 +425,10 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -408,12 +437,15 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 .header__logo {
   width: 100px;
   height: 100px;
-  margin-left: 128px;
 }
 .header__text {
   color: white;
@@ -421,10 +453,10 @@ body {
 }
 .header__button-second {
   background: transparent;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 1px solid rgba(250, 250, 250, 0.3);
   border-radius: 1000px;
   color: white;
@@ -448,24 +480,46 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 .header__button-serch {
   background: transparent;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
   border-radius: 1000px;
   border: 1px solid rgba(250, 250, 250, 0.3);
   color: white;
   text-align: center;
-  margin-left: 820px;
+  display: flex;
+  align-items: center;
+  /* ← Вирівнює по вертикалі */
+  justify-content: center;
+  gap: 8px;
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 18px;
+}
+@media screen and (min-width: 768px) {
+  .header__button-serch {
+    margin-left: 340px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__button-serch {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: 820px;
+  }
 }
 
 button {
@@ -475,14 +529,49 @@ button {
 .hero {
   background: #0D171D;
   color: white;
+  border-radius: 0px 0px 100px 100px;
+  padding-bottom: 200px;
+}
+.hero__wrapper {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .hero__wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .hero__main-elements {
   display: flex;
+  flex-direction: column-reverse;
+  height: 100vh;
+}
+@media screen and (min-width: 1200px) {
+  .hero__main-elements {
+    flex-direction: row;
+  }
 }
 .hero__box-text {
-  width: 311px;
-  margin-top: 209px;
-  margin-left: 128px;
+  width: 291px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .hero__box-text {
+    width: 532px;
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__box-text {
+    width: 311px;
+    margin-top: 209px;
+  }
 }
 .hero__text {
   font-family: Montserrat;
@@ -492,25 +581,91 @@ button {
   line-height: 18px;
 }
 .hero__img {
-  width: 542px;
+  width: 335px;
+  height: 259px;
+  margin-top: 100px;
+}
+@media screen and (min-width: 768px) {
+  .hero__img {
+    width: 532px;
+    height: 411px;
+    margin-top: 54px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__img {
+    width: 542px;
+    margin-top: 54px;
+  }
 }
 .hero__img-text {
-  width: 542px;
+  width: 321.602px;
+  height: 121.739px;
+  flex-shrink: 0;
+}
+@media screen and (min-width: 768px) {
+  .hero__img-text {
+    width: 460px;
+    height: 175px;
+    flex-shrink: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__img-text {
+    width: 542px;
+  }
 }
 .hero__flex-elements {
-  margin-left: 15px;
   margin-top: 54px;
+}
+.hero__button-tobottom {
+  background: none;
+  border: none;
+  display: block;
+  margin-bottom: auto;
+  align-self: center;
+}
+@media screen and (min-width: 320px) {
+  .hero__button-tobottom {
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__button-tobottom {
+    margin-bottom: 0;
+    margin-top: auto;
+    align-self: flex-end;
+    width: 72px;
+    height: 72px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__button-tobottom {
+    margin-left: auto;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 :root {
   --font-family: "Montserrat", sans-serif;
   --second-family: "Poppins", sans-serif;
-}
-
-:root {
   --black: #0d171d;
   --green: #a1d737;
   --light-green: #daf836;
+}
+
+#slides {
+  display: flex;
+  gap: 29px;
+  border-radius-start-end: 100px;
+  transition: transform 0.3s ease;
+}
+
+.slider {
+  overflow: hidden;
 }
 
 .main {
@@ -525,8 +680,8 @@ button {
 }
 @media screen and (min-width: 1280px) {
   .main {
-    margin-top: 146px;
-    margin-bottom: 120px;
+    margin-top: 132px;
+    margin-bottom: 113px;
   }
 }
 .main__fixer {
@@ -556,6 +711,7 @@ button {
 @media screen and (min-width: 1280px) {
   .main__osnova {
     display: flex;
+    gap: 54px;
   }
 }
 .main__title {
@@ -592,7 +748,7 @@ button {
     line-height: 117%;
   }
 }
-.main__slide-button-1 .main__slide-button-2 .main__slide-button-3 .main__slide-button-4 .main__slide-button-5:hover {
+.main__slide-button-1.active, .main__slide-button-2.active, .main__slide-button-3.active, .main__slide-button-4.active, .main__slide-button-5.active {
   color: var(--green);
 }
 .main__text {
@@ -609,8 +765,8 @@ button {
   }
 }
 .main__photo {
-  width: 233px;
-  height: 279px;
+  width: 315px;
+  height: 308px;
 }
 @media screen and (min-width: 768px) {
   .main__photo {
@@ -622,6 +778,8 @@ button {
   .main__photo {
     width: 365px;
     height: 579px;
+    margin-left: 150px;
+    margin-right: 300px;
   }
 }
 .main__slide-1 {
@@ -653,12 +811,17 @@ button {
 }
 @media screen and (min-width: 1280px) {
   .main__block {
-    width: 504px;
+    width: 709px;
     height: 644px;
   }
 }
 .main__links {
   margin-top: 32px;
+}
+@media screen and (min-width: 1280px) {
+  .main__links {
+    margin-top: 0;
+  }
 }
 .main__line {
   margin-top: 14px;
@@ -666,10 +829,11 @@ button {
 }
 @media screen and (min-width: 768px) {
   .main__line {
-    margin-top: 16px;
-    margin-bottom: 32px;
+    margin-top: 9px;
+    margin-bottom: 9px;
   }
 }
+
 .explore {
   border-radius: 100px;
   background: #0D171D;
@@ -887,18 +1051,36 @@ button {
   line-height: 18px; /* 128.571% */
 }
 
-.episodes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .episodes__container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 64px;
+}
+@media screen and (min-width: 321px) {
+  .episodes__container {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .episodes__container {
+    flex-direction: column;
+    padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+  }
 }
 .episodes__input-container {
   padding-right: 16px;
+  padding-left: 16px;
+}
+@media screen and (max-width: 320px) {
+  .episodes__input-container {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+  }
 }
 .episodes__input-name {
   color: #111;
@@ -908,6 +1090,20 @@ button {
   font-weight: 400;
   line-height: 18px;
 }
+@media screen and (max-width: 320px) {
+  .episodes__input-name {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .episodes__season-container {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+  }
+}
 .episodes__input {
   display: flex;
   padding: 12px 24px;
@@ -916,12 +1112,18 @@ button {
   gap: 72px;
   border-radius: 100px;
   border: 1.5px solid #111;
-  background: #DAF836;
+  background: #daf836;
+}
+@media screen and (max-width: 320px) {
+  .episodes__input {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 .episodes__input::-moz-placeholder {
   color: #111;
   font-family: Montserrat, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -929,16 +1131,29 @@ button {
 .episodes__input::placeholder {
   color: #111;
   font-family: Montserrat, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
 }
+@media screen and (max-width: 320px) {
+  .episodes__input::-moz-placeholder {
+    font-size: 14px;
+  }
+  .episodes__input::placeholder {
+    font-size: 14px;
+  }
+}
 .episodes__input-wrapper {
   position: relative;
   width: 100%;
-  display: flex;
   align-items: center;
+}
+@media screen and (max-width: 320px) {
+  .episodes__input-wrapper {
+    width: 100%;
+    position: relative;
+  }
 }
 .episodes__svg {
   position: absolute;
@@ -947,13 +1162,24 @@ button {
   transform: translateY(-50%);
   pointer-events: none;
 }
+@media screen and (max-width: 320px) {
+  .episodes__svg {
+    right: 20px;
+  }
+}
 .episodes__season-select-name {
   color: #111;
-  font-family: Montserrat;
-  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+}
+@media screen and (max-width: 320px) {
+  .episodes__season-select-name {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 .episodes__season-select {
   display: flex;
@@ -964,10 +1190,160 @@ button {
   border-radius: 100px;
   border: 1.5px solid #111;
 }
+@media screen and (max-width: 320px) {
+  .episodes__season-select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+.episodes__all-seasond {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+.episodes__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  margin-bottom: 64px;
+}
+@media screen and (max-width: 860px) {
+  .episodes__list {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .episodes__list {
+    margin-bottom: 41px;
+  }
+}
+.episodes__list-item {
+  width: 284px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 2px solid #9eff00;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  background: #0d171d;
+}
+@media screen and (max-width: 768px) {
+  .episodes__list-item {
+    width: 336px;
+    height: 250px;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .episodes__list-item {
+    width: 300px;
+    height: 250px;
+    flex-shrink: 0;
+  }
+}
+.episodes__list-item-text {
+  color: #a1d737;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.episodes__list-boxing {
+  display: flex;
+  width: 244px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 106px;
+}
+@media screen and (max-width: 768px) {
+  .episodes__list-boxing {
+    display: flex;
+    width: 296px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 156px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .episodes__list-boxing {
+    display: flex;
+    width: 295px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 156px;
+  }
+}
+.episodes__list-item-container {
+  margin-left: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+}
+.episodes__list-item-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.episodes__list-item-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.episodes__list-item-season {
+  color: rgba(250, 250, 250, 0.5);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+.episodes__list-item-season-number {
+  color: #fafafa;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+.episodes__list-item-date {
+  color: rgba(250, 250, 250, 0.5);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+.episodes__list-item-season-date {
+  color: #fafafa;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
 .episodes__load-more {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 38px;
 }
 .episodes__load-more-btn {
   display: inline-flex;
@@ -976,7 +1352,72 @@ button {
   gap: 10px;
   border: none;
   border-radius: 1000px;
-  background: #A1D737;
+  background: #a1d737;
+}
+.episodes__error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 128px;
+}
+@media screen and (max-width: 320px) {
+  .episodes__error {
+    margin-bottom: 80px;
+  }
+}
+.episodes__error-image {
+  display: none;
+  width: 388px;
+  height: 358px;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 320px) {
+  .episodes__error-image {
+    width: 283px;
+    height: 262px;
+  }
+}
+.episodes__error-text {
+  display: none;
+  color: #111;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+}
+@media screen and (max-width: 320px) {
+  .episodes__error-text {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.32px;
+  }
+}
+
+.season-01 {
+  background-image: url("../img/seasons/first.png");
+}
+
+.season-02 {
+  background-image: url("../img/seasons/second.webp");
+}
+
+.season-03 {
+  background-image: url("../img/seasons/third.webp");
+}
+
+.season-04 {
+  background-image: url("../img/seasons/fourth.webp");
+}
+
+.season-05 {
+  background-image: url("../img/seasons/fifth.webp");
+}
+
+.season-06 {
+  background-image: url("../img/seasons/sixth.webp");
 }
 
 .episodes-modal {
@@ -991,11 +1432,28 @@ button {
   position: relative;
   box-sizing: border-box;
 }
+@media screen and (max-width: 320px) {
+  .episodes-modal {
+    padding: 30px 16px;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+}
 .episodes-modal__fake-container {
   border-radius: 20px;
   background-color: #0f1626;
   padding: 32px;
   border: 2px solid #9eff00;
+}
+@media screen and (max-width: 768px) {
+  .episodes-modal__fake-container {
+    padding: 24px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .episodes-modal__fake-container {
+    padding: 20px;
+  }
 }
 .episodes-modal__series-name {
   color: #fafafa;
@@ -1005,6 +1463,18 @@ button {
   font-weight: 600;
   line-height: 28px;
   margin-bottom: 16px;
+}
+@media screen and (max-width: 768px) {
+  .episodes-modal__series-name {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .episodes-modal__series-name {
+    line-height: 24px;
+    font-size: 18px;
+  }
 }
 .episodes-modal__series {
   display: flex;
@@ -1026,6 +1496,11 @@ button {
   font-weight: 400;
   line-height: 18px;
 }
+@media screen and (max-width: 320px) {
+  .episodes-modal__series-name-id {
+    font-size: 14px;
+  }
+}
 .episodes-modal__series-air-date {
   color: rgba(250, 250, 250, 0.5);
   font-family: Montserrat;
@@ -1042,6 +1517,11 @@ button {
   font-weight: 400;
   line-height: 18px;
 }
+@media screen and (max-width: 320px) {
+  .episodes-modal__series-date {
+    font-size: 14px;
+  }
+}
 .episodes-modal__characters {
   color: #fafafa;
   font-family: Montserrat;
@@ -1050,6 +1530,12 @@ button {
   font-weight: 600;
   line-height: 28px;
   margin-bottom: 16px;
+}
+@media screen and (max-width: 320px) {
+  .episodes-modal__characters {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 .episodes-modal__major-characters {
   color: rgba(250, 250, 250, 0.5);
@@ -1060,8 +1546,34 @@ button {
   line-height: 14px;
   margin-bottom: 8px;
 }
+@media screen and (max-width: 320px) {
+  .episodes-modal__major-characters {
+    display: none;
+  }
+}
 .episodes-modal__characters-container {
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .episodes-modal__characters-container {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .episodes-modal__characters-container {
+    gap: 12px;
+  }
+}
+@media screen and (min-width: 450px) {
+  .episodes-modal__characters-container {
+    gap: 8px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .episodes-modal__characters-container {
+    gap: 8px;
+  }
 }
 .episodes-modal__characters-card {
   display: flex;
@@ -1076,15 +1588,45 @@ button {
   line-height: 18px;
   padding-right: 32px;
 }
+@media screen and (max-width: 320px) {
+  .episodes-modal__characters-name {
+    font-size: 14px;
+    padding-right: 8px;
+  }
+}
 .episodes-modal__id-container {
   padding-right: 32px;
+}
+@media screen and (max-width: 768px) {
+  .episodes-modal__id-container {
+    padding-right: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .episodes-modal__id-container {
+    padding-right: 8px;
+  }
 }
 .episodes-modal__characters-image {
   width: 60px;
   height: 60px;
   flex-shrink: 0;
-  margin-right: 14px;
+  margin-right: 4px;
   border-radius: 8px;
+}
+@media screen and (max-width: 768px) {
+  .episodes-modal__characters-image {
+    width: 52px;
+    height: 52px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .episodes-modal__characters-image {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+  }
 }
 .episodes-modal__close-button {
   position: absolute;
@@ -1101,8 +1643,43 @@ button {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 320px) {
+  .episodes-modal__close-button {
+    top: 8px;
+    right: 8px;
+  }
+}
 .episodes-modal__close-button:hover {
   fill: #caff33;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop-episodes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+body.show-modal .backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .footer {
