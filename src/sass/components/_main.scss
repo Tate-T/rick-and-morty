@@ -9,7 +9,6 @@
 #slides {
     display: flex;
     gap: 29px;
-    border-radius-start-end: 100px;
     transition: transform 0.3s ease;
 }
 
@@ -40,7 +39,7 @@
         }
     }
 
-    &__button {
+    &__second {
         display: block;
         font-family: var(--font-family);
         font-weight: 600;
@@ -58,6 +57,7 @@
     &__osnova {
         @media screen and (min-width: 1280px) {
             display: flex;
+            width: 504px;
             gap: 54px;
         }
     }
@@ -130,9 +130,7 @@
 
         @media screen and (min-width: 1280px) {
             width: 365px;
-            height: 579px;
-            margin-left: 150px;
-            margin-right: 300px;
+            height: 479px;
         }
     }
 
@@ -168,7 +166,7 @@
         }
 
         @media screen and (min-width: 1280px) {
-            width: 709px;
+            width: 504px;
             height: 644px;
         }
     }
@@ -187,7 +185,7 @@
 
         @media screen and (min-width: 768px) {
             margin-top: 9px;
-            margin-bottom: 9px;
+            margin-bottom: 32px;
         }
     }
 }
