@@ -2,6 +2,10 @@ button {
     cursor: pointer;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hero {
     background: #0D171D;
     color: white;

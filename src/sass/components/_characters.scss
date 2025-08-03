@@ -1,0 +1,161 @@
+.character {
+
+    background: white;
+
+   .tags {
+ 
+
+  &__item {
+    display: inline-block;
+    background-color: #0f1114;
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 20px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    white-space: nowrap;
+
+    // Випадкові кути повороту
+    &:nth-child(1) { transform: rotate(-80deg); }
+    &:nth-child(2) { transform: rotate(31.266deg); }
+    &:nth-child(3) { transform:   rotate(17.072deg);}
+    &:nth-child(4) { transform: rotate(95deg); }
+    &:nth-child(5) { transform: rotate(-120deg); }
+    &:nth-child(6) { transform: rotate(170deg); }
+    &:nth-child(7) { transform: rotate(-145deg); }
+    &:nth-child(8) { transform: rotate(120deg); }
+    &:nth-child(9) { transform: rotate(-180deg); }
+    &:nth-child(10) { transform: rotate(160deg); }
+    &:nth-child(11) { transform: rotate(110deg); }
+    &:nth-child(12) { transform: rotate(-130deg); }
+
+    &--green {
+      background-color: #ccf300;
+      color: #000;
+    }
+
+    &--dark {
+      background-color: #0f1114;
+      color: #fff;
+    }
+  }
+}
+
+
+
+    
+
+  &__filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    margin-top: 176px;
+  }
+
+  &__filters-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+  }
+
+  &__filters-label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #111;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+  }
+
+  &__filters-input-wrapper {
+    display: flex;
+    border: 2px solid #000;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #e6f71e;
+  }
+
+  &__filters-input {
+    border: none;
+    padding: 8px 12px;
+    flex-grow: 1;
+    border-radius: 30px 0 0 30px;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    outline: none;
+    background-color: transparent;
+  }
+
+  &__filters-search-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 0 12px;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+  }
+
+  &__filters-select {
+    padding: 8px 12px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__img-list {
+        width: 278px;
+        outline: solid greenyellow 2px;
+        border-radius: 23px;
+    }
+
+    li {
+        width: 278px;
+    }
+
+    &__name {
+        color: #111;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px;
+        /* 112.5% */
+        margin-top: 19px;
+        margin-bottom: 9px;
+    }
+
+    &__span {
+        color: rgba(17, 17, 17, 0.50);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        /* 128.571% */
+    }
+
+    &__info {
+        color: #111;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+}
+
+    
