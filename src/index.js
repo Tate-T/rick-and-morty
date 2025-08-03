@@ -1,4 +1,5 @@
 import "./js/header.js";
+import "./js/button-hero.js";
 import "./js/characters.js";
 import "./js/charactersmodal.js";
 import "./js/episodes.js";
