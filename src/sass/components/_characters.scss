@@ -4,16 +4,32 @@
   .tags {
     position: relative;
     margin-left: 250px;
+    .duplicate {
+      display: none;
+    }
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      margin-left: 0;
+      width: 100vw;
+      .tags__item {
+        white-space: nowrap;
+        flex: 0 0 auto;
+        margin-right: 16px;
+      }
+      .tags__track {
+        display: flex;
+        animation: slider-infinite 18s linear infinite;
+      }
+    }
     &__item {
       display: inline-block;
       padding: 14px 24px;
       border-radius: 25px;
       font-size: 20px;
       font-weight: 600;
-      // text-align: center;
       transition: transform 0.3s ease;
-      // transform-origin: center;
-      // white-space: nowrap;
 
       // Випадкові кути повороту
       &:nth-child(1) {
@@ -198,5 +214,17 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
+  }
+}
+
+// Keyframes for infinite slider
+@media screen and (max-width: 1199px) {
+  @keyframes slider-infinite {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 }
