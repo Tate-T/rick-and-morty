@@ -1356,7 +1356,7 @@ html {
   }
   .character .tags .tags__track {
     display: flex;
-    animation: slider-infinite 18s linear infinite;
+    animation: slider-infinite 20s linear infinite;
   }
 }
 .character .tags__item {
