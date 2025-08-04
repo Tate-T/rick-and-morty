@@ -19,7 +19,7 @@
     }
 
     &__text {
-        width: 610px;
+        max-width: 610px;
         color: #FAFAFA;
         font-size: 44px;
         font-style: normal;
@@ -37,7 +37,7 @@
             font-weight: 600;
             line-height: 32px;
             /* 114.286% */
-            width: 306px;
+            max-width: 306px;
         }
     }
 
