@@ -3,17 +3,29 @@
     --second-family: "Poppins", sans-serif;
     --black: #0d171d;
     --green: #a1d737;
-    --light-green: #daf836;
+    --light-green: rgb(248, 213, 54);
 }
-
 #slides {
-    display: flex;
-    gap: 29px;
-    transition: transform 0.3s ease;
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 100%;
 }
 
 .slider {
-    overflow: hidden;
+  overflow: hidden;
+  width: 100%;
+  @media screen and (min-width:768px) {
+    border-radius: 100px;
+  }
+  border-radius: 25px;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
 }
 
 .main {
@@ -57,8 +69,7 @@
     &__osnova {
         @media screen and (min-width: 1280px) {
             display: flex;
-            width: 504px;
-            gap: 54px;
+            gap: 55px;
         }
     }
 
@@ -119,10 +130,18 @@
             line-height: 112%;
         }
     }
+    &__fix {
+        transform: scaleX(0.5);
+    }
     &__photo {
         width: 315px;
         height: 308px;
-
+        margin-top: 95px;
+          @media screen and (min-width:768px) {
+    border-radius: 100px;
+  }
+  border-radius: 25px;
+        transform: scaleX(0.9);
         @media screen and (min-width: 768px) {
             width: 395px;
             height: 627px;
@@ -136,6 +155,7 @@
 
     &__slide-1 {
         background: var(--green);
+        z-index: 40;
     }
 
     &__slide-2 {
@@ -158,6 +178,10 @@
         border-radius: 25px;
         width: 335px;
         height: 335px;
+          @media screen and (min-width:768px) {
+    border-radius: 100px;
+  }
+  border-radius: 25px;
 
         @media screen and (min-width: 768px) {
             border-radius: 100px;
@@ -166,8 +190,9 @@
         }
 
         @media screen and (min-width: 1280px) {
-            width: 504px;
+            width: 604px;
             height: 644px;
+            padding-right: 20px;
         }
     }
 
@@ -184,7 +209,7 @@
         margin-bottom: 28px;
 
         @media screen and (min-width: 768px) {
-            margin-top: 9px;
+            margin-top: 16px;
             margin-bottom: 32px;
         }
     }
