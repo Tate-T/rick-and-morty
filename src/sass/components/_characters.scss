@@ -1,41 +1,45 @@
 .character {
+  position: relative;
   background: white;
-
   .tags {
-    position: relative;
-    margin-left: 250px;
+    padding-left: 60px;
     .duplicate {
       display: none;
     }
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 74.9375rem) {
       display: flex;
       flex-wrap: nowrap;
-      overflow: hidden;
+      height: 7.1875rem;
+      align-items: center;
       margin-left: 0;
       width: 100vw;
-      .tags__item {
-        white-space: nowrap;
-        flex: 0 0 auto;
-        margin-right: 16px;
-      }
-      .tags__track {
-        display: flex;
-        animation: slider-infinite 20s linear infinite;
-      }
+      // .tags__item {
+      //   white-space: nowrap;
+      //   flex: 0 0 auto;
+      //   margin-right: 1rem;
+      // }
+      // .tags__track {
+      //   display: flex;
+      //   width: max-content;
+      //   animation: slider-infinite 20s linear infinite;
+      // }
     }
     &__item {
       display: inline-block;
-      padding: 14px 24px;
-      border-radius: 25px;
-      font-size: 20px;
+      padding: 0.875rem 1.5rem;
+      border-radius: 1.5625rem;
+      font-size: 1.25rem;
       font-weight: 600;
       transition: transform 0.3s ease;
 
       // Випадкові кути повороту
       &:nth-child(1) {
         position: relative;
-        left: -50px;
-        margin-top: 51px;
+        left: -3.125rem;
+        margin-top: 44px;
+        @media screen and (max-width: 19.9375rem) {
+          margin-top: 0;
+        }
       }
       &:nth-child(2) {
         position: absolute;
@@ -44,52 +48,57 @@
       }
       &:nth-child(3) {
         position: absolute;
-        left: 105px;
-        top: -20px;
-        transform: rotate(31deg);
+        left: 120px;
+        top: -1.25rem;
+
         z-index: 2;
       }
       &:nth-child(4) {
-        margin-right: 177px;
+        margin-right: 11.0625rem;
       }
       &:nth-child(5) {
         position: absolute;
-        top: 13px;
-        left: 280px;
-        transform: rotate(17deg);
+        top: 5px;
+        left: 370px;
+
         color: #a1d737;
       }
       &:nth-child(6) {
         position: absolute;
-        left: 530px;
+        top: 24px;
+        left: 570px;
         z-index: 999;
-        transform: rotate(132deg);
       }
-      &:nth-child(7) {
-        transform: rotate(180deg);
+      @media screen and (min-width: 20rem) {
+        .tags__item:nth-child(6) {
+          left: 29.6875rem;
+          top: -1.5625rem;
+          z-index: 999;
+        }
       }
       &:nth-child(8) {
-        margin-right: 40px;
+        margin-right: 2.5rem;
       }
       &:nth-child(9) {
         position: absolute;
-        left: 830px;
-        top: 10px;
-        transform: rotate(35deg);
+        left: 910px;
+        top: -5px;
+      }
+      @media screen and (min-width: 20rem) {
+        .tags__item:nth-child(9) {
+          top: -3.75rem;
+        }
       }
       &:nth-child(10) {
-        margin-right: 122px;
-        transform: rotate(180deg);
+        margin-right: 7.625rem;
+
         color: #daf836;
       }
       &:nth-child(11) {
         position: absolute;
-        transform: rotate(149deg);
-        right: 325px;
-        top: 10px;
-      }
-      &:nth-child(12) {
-        transform: rotate(180deg);
+
+        right: 575px;
+        top: 0.625rem;
       }
 
       &--green {
@@ -111,21 +120,21 @@
   &__filters {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 1rem;
     align-items: flex-start;
-    margin-bottom: 24px;
-    margin-top: 176px;
+    margin-bottom: 1.5rem;
+    margin-top: 11rem;
   }
 
   &__filters-group {
     display: flex;
     flex-direction: column;
-    min-width: 150px;
+    min-width: 9.375rem;
   }
 
   &__filters-label {
-    font-size: 14px;
-    margin-bottom: 6px;
+    font-size: 0.875rem;
+    margin-bottom: 0.375rem;
     color: #111;
     font-family: Montserrat, sans-serif;
     font-weight: 500;
@@ -133,18 +142,18 @@
 
   &__filters-input-wrapper {
     display: flex;
-    border: 2px solid #000;
-    border-radius: 30px;
+    border: 0.125rem solid #000;
+    border-radius: 1.875rem;
     overflow: hidden;
     background-color: #e6f71e;
   }
 
   &__filters-input {
     border: none;
-    padding: 8px 12px;
+    padding: 0.5rem 0.75rem;
     flex-grow: 1;
-    border-radius: 30px 0 0 30px;
-    font-size: 14px;
+    border-radius: 1.875rem 0 0 1.875rem;
+    font-size: 0.875rem;
     font-family: Montserrat, sans-serif;
     outline: none;
     background-color: transparent;
@@ -153,17 +162,17 @@
   &__filters-search-btn {
     background: none;
     border: none;
-    font-size: 18px;
-    padding: 0 12px;
+    font-size: 1.125rem;
+    padding: 0 0.75rem;
     cursor: pointer;
     font-family: Montserrat, sans-serif;
   }
 
   &__filters-select {
-    padding: 8px 12px;
-    border: 2px solid #000;
-    border-radius: 30px;
-    font-size: 14px;
+    padding: 0.5rem 0.75rem;
+    border: 0.125rem solid #000;
+    border-radius: 1.875rem;
+    font-size: 0.875rem;
     font-family: Montserrat, sans-serif;
     cursor: pointer;
     background-color: white;
@@ -172,59 +181,58 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   &__img-list {
-    width: 278px;
-    outline: solid greenyellow 2px;
-    border-radius: 23px;
+    width: 17.375rem;
+    outline: solid greenyellow 0.125rem;
+    border-radius: 1.4375rem;
   }
 
   li {
-    width: 278px;
+    width: 17.375rem;
   }
 
   &__name {
     color: #111;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 18px;
+    line-height: 1.125rem;
     /* 112.5% */
-    margin-top: 19px;
-    margin-bottom: 9px;
+    margin-top: 1.1875rem;
+    margin-bottom: 0.5625rem;
   }
 
   &__span {
     color: rgba(17, 17, 17, 0.5);
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 1.125rem;
     /* 128.571% */
   }
 
   &__info {
     color: #111;
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 1.125rem;
   }
 }
 
-// Keyframes for infinite slider
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 74.9375rem) {
   @keyframes slider-infinite {
     0% {
-      transform: translateX(0);
+      transform: translateX(0%);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-100%);
     }
   }
 }
