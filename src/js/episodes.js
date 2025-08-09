@@ -1,4 +1,5 @@
 const form = document.querySelector(".episodes");
+if (!form) return;
 const input = document.querySelector(".episodes__input");
 const list = document.querySelector(".episodes__list");
 const loadMoreBtn = document.querySelector(".episodes__load-more-btn");

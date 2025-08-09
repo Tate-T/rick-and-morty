@@ -1072,17 +1072,37 @@ html {
   --second-family: "Poppins", sans-serif;
   --black: #0d171d;
   --green: #a1d737;
-  --light-green: #daf836;
+  --light-green: rgb(248, 213, 54);
 }
 
 #slides {
   display: flex;
-  gap: 29px;
   transition: transform 0.3s ease;
+  width: 100%;
 }
 
 .slider {
   overflow: hidden;
+  width: 100%;
+  border-radius: 25px;
+}
+@media screen and (min-width: 768px) {
+  .slider {
+    border-radius: 100px;
+  }
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+@media screen and (min-width: 1200px) {
+  .slide {
+    justify-content: start;
+  }
 }
 
 .main {
@@ -1128,8 +1148,7 @@ html {
 @media screen and (min-width: 1280px) {
   .main__osnova {
     display: flex;
-    width: 504px;
-    gap: 54px;
+    gap: 55px;
   }
 }
 .main__title {
@@ -1182,24 +1201,49 @@ html {
     line-height: 112%;
   }
 }
+.main__remont {
+  transform: scaleX(0.7);
+}
+@media screen and (min-width: 1280px) {
+  .main__remont {
+    transform: scaleX(1.1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__remont {
+    transform: scaleX(0.95);
+  }
+}
+.main__fix {
+  transform: scaleX(0.3);
+}
+@media screen and (min-width: 768px) {
+  .main__fix {
+    transform: scaleX(0.4);
+  }
+}
 .main__photo {
   width: 315px;
   height: 308px;
+  margin-top: 5px;
 }
 @media screen and (min-width: 768px) {
   .main__photo {
     width: 395px;
     height: 627px;
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__photo {
     width: 365px;
+    margin-top: 60px;
     height: 479px;
   }
 }
 .main__slide-1 {
   background: var(--green);
+  z-index: 40;
 }
 .main__slide-2 {
   background: var(--black);
@@ -1217,17 +1261,23 @@ html {
   border-radius: 25px;
   width: 335px;
   height: 335px;
+  border-radius: 25px;
 }
 @media screen and (min-width: 768px) {
   .main__block {
     border-radius: 100px;
-    width: 704px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__block {
+    border-radius: 100px;
+    width: 115%;
     height: 704px;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__block {
-    width: 504px;
+    width: 100%;
     height: 644px;
   }
 }
@@ -1245,7 +1295,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .main__line {
-    margin-top: 9px;
+    margin-top: 16px;
     margin-bottom: 32px;
   }
 }

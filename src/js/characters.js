@@ -1,4 +1,5 @@
 const characterList = document.getElementById('character__list');
+if (!characterList) return;
 
 fetch('https://rickandmortyapi.com/api/character')
   .then(response => response.json())

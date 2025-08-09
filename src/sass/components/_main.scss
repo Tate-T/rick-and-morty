@@ -3,17 +3,35 @@
     --second-family: "Poppins", sans-serif;
     --black: #0d171d;
     --green: #a1d737;
-    --light-green: #daf836;
+    --light-green: rgb(248, 213, 54);
 }
 
 #slides {
     display: flex;
-    gap: 29px;
     transition: transform 0.3s ease;
+    width: 100%;
 }
 
 .slider {
     overflow: hidden;
+    width: 100%;
+
+    @media screen and (min-width:768px) {
+        border-radius: 100px;
+    }
+
+    border-radius: 25px;
+}
+
+.slide {
+    flex-shrink: 0;
+    @media screen and (min-width:1200px) {
+         justify-content: start;
+    }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
 
 .main {
@@ -57,8 +75,7 @@
     &__osnova {
         @media screen and (min-width: 1280px) {
             display: flex;
-            width: 504px;
-            gap: 54px;
+            gap: 55px;
         }
     }
 
@@ -119,23 +136,43 @@
             line-height: 112%;
         }
     }
+    &__remont {
+        @media screen and (min-width: 1280px) {
+             transform: scaleX(1.1);
+        }
+        @media screen and (min-width: 768px) {
+             transform: scaleX(0.95);
+        }
+        transform: scaleX(0.7);
+    }
+    &__fix {
+        transform: scaleX(0.3);
+        @media screen and (min-width: 768px) {
+             transform: scaleX(0.4);
+        }
+    }
+    
     &__photo {
         width: 315px;
         height: 308px;
+        margin-top: 5px;
 
         @media screen and (min-width: 768px) {
             width: 395px;
             height: 627px;
+            margin-top: 10px;
         }
 
         @media screen and (min-width: 1280px) {
             width: 365px;
+             margin-top: 60px;
             height: 479px;
         }
     }
 
     &__slide-1 {
         background: var(--green);
+        z-index: 40;
     }
 
     &__slide-2 {
@@ -159,15 +196,23 @@
         width: 335px;
         height: 335px;
 
+        @media screen and (min-width:768px) {
+            border-radius: 100px;
+        }
+
+        border-radius: 25px;
+
         @media screen and (min-width: 768px) {
             border-radius: 100px;
-            width: 704px;
+            width: 115%;
             height: 704px;
         }
 
         @media screen and (min-width: 1280px) {
-            width: 504px;
+            // width: 604px;
+            width: 100%;
             height: 644px;
+            // padding-right: 20px;
         }
     }
 
@@ -184,7 +229,7 @@
         margin-bottom: 28px;
 
         @media screen and (min-width: 768px) {
-            margin-top: 9px;
+            margin-top: 16px;
             margin-bottom: 32px;
         }
     }

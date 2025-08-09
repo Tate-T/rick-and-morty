@@ -1,4 +1,5 @@
 const slides = document.getElementById("slides");
+if (!slides) return;
 const buttons = document.querySelectorAll(".pagination button");
 let currentSlide = 0;
 
