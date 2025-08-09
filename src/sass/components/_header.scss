@@ -1,3 +1,127 @@
+.backdrop-serch {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999; // Встановлюємо високий z-index для перекриття інших елементів
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(9, 11, 76);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 10000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90vw;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 768px) {
+        width: 600px;
+        height: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 500px;
+        height: auto;
+    }
+
+    &__close {
+        margin-left: auto;
+        display: block;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+    }
+
+    &__serch-characters {
+        color: chartreuse;
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    &__input {
+        background: transparent;
+        border: 1px solid rgba(250, 250, 250, 0.3);
+        border-radius: 1000px;
+        color: white;
+        padding: 10px;
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        margin-bottom: 10px;
+
+
+        &::placeholder {
+            color: rgba(250, 250, 250, 0.5);
+        }
+    }
+
+    &__results {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        max-height: 300px;
+        overflow-y: auto;
+
+    }
+
+    &__results-item {
+        margin-top: 50px;
+    }
+
+    &__results-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 6px;
+        padding: 10px;
+        color: white;
+
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .character__info {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .character__name {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+    }
+}
+
+
 .header {
     padding-top: 24px;
     background: #0D171D;
@@ -23,22 +147,23 @@
 
     &__list {
         display: flex;
+        align-items: center;
 
         @media screen and (max-width: 400px) {
             display: none;
-    position: absolute; // ← відв’язуємо від потоку
-    top: 10px;
-    right: 0;
-    background-color: #1a1a1a;
-    padding: 10px;
-    border-radius: 8px;
-    z-index: 10;
-    flex-direction: column;
-    gap: 10px;
+            position: absolute; // ← відв’язуємо від потоку
+            top: 10px;
+            right: 0;
+            background-color: #1a1a1a;
+            padding: 10px;
+            border-radius: 8px;
+            z-index: 10;
+            flex-direction: column;
+            gap: 10px;
 
-    &.active {
-      display: flex;
-    }
+            &.active {
+                display: flex;
+            }
         }
 
         @media screen and (min-width: 768px) {}
@@ -166,5 +291,37 @@
             margin-left: 820px;
         }
     }
+
+     &__name {
+        color: white;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px;
+        /* 112.5% */
+        margin-top: 19px;
+        margin-bottom: 9px;
+    }
+
+    &__span {
+        color: white;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        /* 128.571% */
+    }
+
+    &__info {
+        color: white;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
 
 }

@@ -10,7 +10,7 @@ html {
     background: #0D171D;
     color: white;
     border-radius: 0px 0px 100px 100px;
-    padding-bottom: 200px;
+    padding-bottom: 64px;
 
     &__wrapper {
         display: flex;
@@ -129,7 +129,6 @@ html {
         }
 
         @media screen and (min-width: 1200px) {
-            margin-left: auto; // додаткове вирівнювання вправо на десктопі
             width: 80px;
             height: 80px;
         }
