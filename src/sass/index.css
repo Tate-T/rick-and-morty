@@ -644,6 +644,29 @@ html {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .tags {
+    overflow: hidden;
+    width: 100vw;
+    padding-top: 30px;
+    position: relative;
+  }
+  .tags__track {
+    display: flex;
+    align-items: center;
+    width: -moz-max-content;
+    width: max-content;
+    animation: tags-infinite-scroll 25s linear infinite;
+  }
+  @keyframes tags-infinite-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
 @media screen and (min-width: 1200px) {
   .character .tags__item:nth-child(1) {
     animation: wiggleBtn 1.2s ease-in-out infinite;
@@ -1338,17 +1361,11 @@ html {
 .character .tags {
   padding-left: 60px;
 }
-.character .tags .duplicate {
-  display: none;
-}
-@media screen and (max-width: 74.9375rem) {
+@media screen and (min-width: 1200px) {
   .character .tags {
     display: flex;
+    justify-content: center;
     flex-wrap: nowrap;
-    height: 7.1875rem;
-    align-items: center;
-    margin-left: 0;
-    width: 100vw;
   }
 }
 .character .tags__item {
@@ -1357,49 +1374,65 @@ html {
   border-radius: 1.5625rem;
   font-size: 1.25rem;
   font-weight: 600;
+  white-space: nowrap;
   transition: transform 0.3s ease;
 }
 .character .tags__item:nth-child(1) {
   position: relative;
-  left: -3.125rem;
   margin-top: 44px;
 }
-@media screen and (max-width: 19.9375rem) {
+@media screen and (max-width: 1199px) {
   .character .tags__item:nth-child(1) {
+    position: static;
     margin-top: 0;
   }
 }
 .character .tags__item:nth-child(2) {
   position: absolute;
-  left: 0;
+  left: 20px;
   z-index: 1;
+  top: -10px;
+}
+@media screen and (max-width: 1199px) {
+  .character .tags__item:nth-child(2) {
+    position: static;
+  }
 }
 .character .tags__item:nth-child(3) {
   position: absolute;
-  left: 120px;
-  top: -1.25rem;
+  left: 90px;
+  top: -50px;
   z-index: 2;
+}
+@media screen and (max-width: 1199px) {
+  .character .tags__item:nth-child(3) {
+    position: static;
+  }
 }
 .character .tags__item:nth-child(4) {
   margin-right: 11.0625rem;
+  margin-left: 35px;
 }
 .character .tags__item:nth-child(5) {
   position: absolute;
-  top: 5px;
-  left: 370px;
+  top: -20px;
+  left: 300px;
   color: #a1d737;
+}
+@media screen and (max-width: 1199px) {
+  .character .tags__item:nth-child(5) {
+    position: static;
+  }
 }
 .character .tags__item:nth-child(6) {
   position: absolute;
-  top: 24px;
+  top: -20px;
   left: 570px;
   z-index: 999;
 }
-@media screen and (min-width: 20rem) {
-  .character .tags__item .tags__item:nth-child(6) {
-    left: 29.6875rem;
-    top: -1.5625rem;
-    z-index: 999;
+@media screen and (max-width: 1199px) {
+  .character .tags__item:nth-child(6) {
+    position: static;
   }
 }
 .character .tags__item:nth-child(8) {
@@ -1410,9 +1443,14 @@ html {
   left: 910px;
   top: -5px;
 }
-@media screen and (min-width: 20rem) {
-  .character .tags__item .tags__item:nth-child(9) {
-    top: -3.75rem;
+@media screen and (max-width: 1199px) {
+  .character .tags__item:nth-child(9) {
+    position: static;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .character .tags__item:nth-child(11) {
+    position: static;
   }
 }
 .character .tags__item:nth-child(10) {
@@ -1421,8 +1459,13 @@ html {
 }
 .character .tags__item:nth-child(11) {
   position: absolute;
-  right: 575px;
+  left: 1156px;
   top: 0.625rem;
+}
+@media screen and (max-width: 1199px) {
+  .character .tags__item:nth-child(11) {
+    position: static;
+  }
 }
 .character .tags__item--green {
   background-color: #a1d737;
@@ -1435,6 +1478,13 @@ html {
 .character .tags__item--light-green {
   background: #daf836;
   color: #111;
+}
+@media screen and (min-width: 1200px) {
+  .character .tags__track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .character__filters {
   display: flex;
@@ -1532,16 +1582,6 @@ html {
   line-height: 1.125rem;
 }
 
-@media screen and (max-width: 74.9375rem) {
-  @keyframes slider-infinite {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-}
 .see-modal {
   width: 710px;
   height: auto;
