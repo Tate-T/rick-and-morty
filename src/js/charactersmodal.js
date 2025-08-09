@@ -8,7 +8,6 @@ const modalParams = document.querySelectorAll(".see-modal__status-people .see-mo
 const episodesContainer = document.querySelector(".see-modal__item-2");
 
 async function openCharacterModal(characterId) {
-  try {
     const res = await fetch(`https://rickandmortyapi.com/api/character/${characterId}`);
     const character = await res.json();
 
@@ -51,9 +50,6 @@ async function openCharacterModal(characterId) {
 
     modal.classList.add("active");
     body.classList.add("no-scroll");
-  } catch (err) {
-    console.error("Помилка при відкритті модалки:", err);
-  }
 }
 
 modal.addEventListener("click", (e) => {
@@ -90,5 +86,3 @@ fetch("https://rickandmortyapi.com/api/character")
       });
     });
   })
-  .catch((error) => {
-  });
