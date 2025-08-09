@@ -1,4 +1,5 @@
 const list = document.querySelector(".episodes__list");
+if (!list) return;
 const modal = document.querySelector(".data-modal");
 const modalClose = document.querySelector(".data-modal-close");
 const body = document.body;

@@ -1,5 +1,6 @@
 
   const exploreBox = document.querySelector('.explore__box');
+  if (!exploreBox) return;
   const originalImages = Array.from(exploreBox.children);
   const gap = 33;
 
