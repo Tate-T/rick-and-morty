@@ -1,3 +1,131 @@
+.tags {
+  padding-bottom: 120px;
+  .superpower {
+    color: #a1d737;
+  }
+  .follow {
+    color: #daf836;
+  }
+  .tags__track-wrap {
+    position: relative;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  &__item {
+    display: inline-block;
+    padding: 0.875rem 1.5rem;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: transform 0.3s ease;
+
+    // Випадкові кути повороту
+    &:nth-child(1) {
+      position: relative;
+      margin-top: 44px;
+      @media screen and (max-width: 1199px) {
+        position: static;
+        margin-top: 0;
+      }
+    }
+    &:nth-child(2) {
+      position: absolute;
+      left: 50px;
+      z-index: 1;
+      top: -8px;
+      @media screen and (max-width: 1199px) {
+        position: static;
+      }
+    }
+    &:nth-child(3) {
+      position: absolute;
+      left: 110px;
+      top: -50px;
+      z-index: 2;
+      @media screen and (max-width: 1199px) {
+        position: static;
+      }
+    }
+    &:nth-child(5) {
+      position: absolute;
+      top: -20px;
+      left: 630px;
+      color: #a1d737;
+      @media screen and (max-width: 1199px) {
+        position: static;
+      }
+    }
+    &:nth-child(6) {
+      position: absolute;
+      top: -20px;
+      left: 820px;
+      z-index: 999;
+      @media screen and (max-width: 1199px) {
+        position: static;
+      }
+    }
+    &:nth-child(8) {
+      margin-right: 2.5rem;
+    }
+    &:nth-child(9) {
+      position: absolute;
+      left: 1160px;
+      top: -13px;
+    }
+    @media screen and (max-width: 1199px) {
+      &:nth-child(9) {
+        position: static;
+      }
+    }
+    @media screen and (max-width: 1199px) {
+      &:nth-child(11) {
+        position: static;
+      }
+    }
+    &:nth-child(10) {
+      margin-right: 7.625rem;
+
+      color: #daf836;
+    }
+    &:nth-child(11) {
+      position: absolute;
+      top: -17px;
+      left: 1415px;
+    }
+    @media screen and (max-width: 1199px) {
+      &:nth-child(11) {
+        position: static;
+      }
+    }
+
+    &--green {
+      background-color: #a1d737;
+      color: #111;
+    }
+
+    &--dark {
+      background-color: #0f1114;
+      color: #fff;
+    }
+    &--light-green {
+      background: #daf836;
+      color: #111;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tags__track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .tags {
     overflow: hidden;
@@ -22,144 +150,142 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .character {
-    .tags__item:nth-child(1) {
-      animation: wiggleBtn 1.2s ease-in-out infinite;
+  .tags__item:nth-child(1) {
+    animation: wiggleBtn 1.2s ease-in-out infinite;
+  }
+  .tags__item:nth-child(2) {
+    animation: wiggleBtn 1.3s ease-in-out infinite;
+  }
+  .tags__item:nth-child(3) {
+    animation: wiggleBtn35deg 2.8s ease-in-out infinite;
+  }
+  .tags__item:nth-child(4) {
+    animation: wiggleBtn 1.1s ease-in-out infinite;
+  }
+  .tags__item:nth-child(5) {
+    animation: wiggleBtn17deg 2.2s ease-in-out infinite;
+  }
+  .tags__item:nth-child(6) {
+    animation: wiggleBtn132deg 2.5s ease-in-out infinite;
+  }
+  .tags__item:nth-child(7) {
+    animation: wiggleBtn180deg 2s ease-in-out infinite;
+  }
+  .tags__item:nth-child(8) {
+    animation: wiggleBtn 1.5s ease-in-out infinite;
+  }
+  .tags__item:nth-child(9) {
+    animation: wiggleBtn35deg 2.8s ease-in-out infinite;
+  }
+  .tags__item:nth-child(10) {
+    animation: wiggleBtn180deg 2s ease-in-out infinite;
+  }
+  .tags__item:nth-child(11) {
+    animation: wiggleBtn149deg 3.1s ease-in-out infinite;
+  }
+  .tags__item:nth-child(12) {
+    animation: wiggleBtn180deg 2s ease-in-out infinite;
+  }
+  @keyframes wiggleBtn {
+    0% {
+      transform: rotate(-8deg);
     }
-    .tags__item:nth-child(2) {
-      animation: wiggleBtn 1.3s ease-in-out infinite;
+    25% {
+      transform: rotate(8deg);
     }
-    .tags__item:nth-child(3) {
-      animation: wiggleBtn35deg 2.8s ease-in-out infinite;
+    50% {
+      transform: rotate(-8deg);
     }
-    .tags__item:nth-child(4) {
-      animation: wiggleBtn 1.1s ease-in-out infinite;
+    75% {
+      transform: rotate(8deg);
     }
-    .tags__item:nth-child(5) {
-      animation: wiggleBtn17deg 2.2s ease-in-out infinite;
+    100% {
+      transform: rotate(-8deg);
     }
-    .tags__item:nth-child(6) {
-      animation: wiggleBtn132deg 2.5s ease-in-out infinite;
+  }
+  @keyframes wiggleBtn35deg {
+    0% {
+      transform: rotate(-43deg);
     }
-    .tags__item:nth-child(7) {
-      animation: wiggleBtn180deg 2s ease-in-out infinite;
+    25% {
+      transform: rotate(43deg);
     }
-    .tags__item:nth-child(8) {
-      animation: wiggleBtn 1.5s ease-in-out infinite;
+    50% {
+      transform: rotate(-43deg);
     }
-    .tags__item:nth-child(9) {
-      animation: wiggleBtn35deg 2.8s ease-in-out infinite;
+    75% {
+      transform: rotate(43deg);
     }
-    .tags__item:nth-child(10) {
-      animation: wiggleBtn180deg 2s ease-in-out infinite;
+    100% {
+      transform: rotate(-43deg);
     }
-    .tags__item:nth-child(11) {
-      animation: wiggleBtn149deg 3.1s ease-in-out infinite;
+  }
+  @keyframes wiggleBtn17deg {
+    0% {
+      transform: rotate(-25deg);
     }
-    .tags__item:nth-child(12) {
-      animation: wiggleBtn180deg 2s ease-in-out infinite;
+    25% {
+      transform: rotate(25deg);
     }
-    @keyframes wiggleBtn {
-      0% {
-        transform: rotate(-8deg);
-      }
-      25% {
-        transform: rotate(8deg);
-      }
-      50% {
-        transform: rotate(-8deg);
-      }
-      75% {
-        transform: rotate(8deg);
-      }
-      100% {
-        transform: rotate(-8deg);
-      }
+    50% {
+      transform: rotate(-25deg);
     }
-    @keyframes wiggleBtn35deg {
-      0% {
-        transform: rotate(-43deg);
-      }
-      25% {
-        transform: rotate(43deg);
-      }
-      50% {
-        transform: rotate(-43deg);
-      }
-      75% {
-        transform: rotate(43deg);
-      }
-      100% {
-        transform: rotate(-43deg);
-      }
+    75% {
+      transform: rotate(25deg);
     }
-    @keyframes wiggleBtn17deg {
-      0% {
-        transform: rotate(-25deg);
-      }
-      25% {
-        transform: rotate(25deg);
-      }
-      50% {
-        transform: rotate(-25deg);
-      }
-      75% {
-        transform: rotate(25deg);
-      }
-      100% {
-        transform: rotate(-25deg);
-      }
+    100% {
+      transform: rotate(-25deg);
     }
-    @keyframes wiggleBtn132deg {
-      0% {
-        transform: rotate(132deg);
-      }
-      25% {
-        transform: rotate(70deg);
-      }
-      50% {
-        transform: rotate(132deg);
-      }
-      75% {
-        transform: rotate(70deg);
-      }
-      100% {
-        transform: rotate(132deg);
-      }
+  }
+  @keyframes wiggleBtn132deg {
+    0% {
+      transform: rotate(132deg);
     }
-    @keyframes wiggleBtn180deg {
-      0% {
-        transform: rotate(180deg);
-      }
-      25% {
-        transform: rotate(115deg);
-      }
-      50% {
-        transform: rotate(180deg);
-      }
-      75% {
-        transform: rotate(115deg);
-      }
-      100% {
-        transform: rotate(180deg);
-      }
+    25% {
+      transform: rotate(70deg);
     }
-    @keyframes wiggleBtn149deg {
-      0% {
-        transform: rotate(149deg);
-      }
-      25% {
-        transform: rotate(207deg);
-      }
-      50% {
-        transform: rotate(149deg);
-      }
-      75% {
-        transform: rotate(207deg);
-      }
-      100% {
-        transform: rotate(149deg);
-      }
+    50% {
+      transform: rotate(132deg);
+    }
+    75% {
+      transform: rotate(70deg);
+    }
+    100% {
+      transform: rotate(132deg);
+    }
+  }
+  @keyframes wiggleBtn180deg {
+    0% {
+      transform: rotate(180deg);
+    }
+    25% {
+      transform: rotate(115deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(115deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  @keyframes wiggleBtn149deg {
+    0% {
+      transform: rotate(149deg);
+    }
+    25% {
+      transform: rotate(207deg);
+    }
+    50% {
+      transform: rotate(149deg);
+    }
+    75% {
+      transform: rotate(207deg);
+    }
+    100% {
+      transform: rotate(149deg);
     }
   }
 }

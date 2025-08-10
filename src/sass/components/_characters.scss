@@ -1,7 +1,10 @@
 .character {
   position: relative;
   background: white;
+
+=======
   padding-bottom: 80px;
+
 
   &__filter-container {
     display: flex;
@@ -22,23 +25,21 @@
   }
 
   &__item img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover; /* зберігає пропорції та обрізає зайве */
-  border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* зберігає пропорції та обрізає зайве */
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
 
   &__search-box {
     border-radius: 100px;
-border: 1.5px solid #111;
-background: #DAF836;
-padding: 16px 24px; 
-position: relative;
-width: 233px;
+    border: 1.5px solid #111;
+    background: #daf836;
+    padding: 16px 24px;
+    position: relative;
+    width: 233px;
   }
 
   &__input {
@@ -46,21 +47,32 @@ width: 233px;
     border: none;
     width: 140px;
     margin-right: 72px;
+
+=======
     box-sizing: border-box;
     
+
   }
 
   &__title {
     color: #111;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+
 font-family: Montserrat;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 18px; /* 128.571% */
 margin-bottom: 8px;
+
   }
 
-    &__filter-container {
+  &__filter-container {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -72,16 +84,15 @@ margin-bottom: 8px;
   }
 
   select {
-     border-radius: 100px;
-border: 1.5px solid #111;
-padding: 16px 24px;
-cursor: pointer;
+    border-radius: 100px;
+    border: 1.5px solid #111;
+    padding: 16px 24px;
+    cursor: pointer;
   }
 
   select:focus {
     outline: none;
   }
-
 
   &__list {
     display: flex;
