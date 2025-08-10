@@ -16,10 +16,10 @@ function loadCharacters(page) {
         <li>
           <img class="character__img-list" src="${character.image}" alt="${character.name}">
           <h2 class="character__name">${character.name}</h2>
-          <h3 class="character__info-o">
+          <h3 class="character__info character__origin">
             <span class="character__span">Origin:</span> ${character.origin.name}
           </h3>
-          <h3 class="character__info-l">
+          <h3 id="location" class="character__info character__location">
             <span class="character__span">Location:</span> ${character.location.name}
           </h3>
         </li>

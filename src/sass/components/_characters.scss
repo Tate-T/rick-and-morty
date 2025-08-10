@@ -57,6 +57,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 18px; /* 128.571% */
+margin-bottom: 8px;
   }
 
     &__filter-container {
@@ -86,6 +87,7 @@ cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     gap: 1.25rem;
+    margin-top: 61px;
   }
 
   &__img-list {
@@ -96,6 +98,10 @@ cursor: pointer;
 
   li {
     width: 17.375rem;
+  }
+
+  &__location {
+    margin-bottom: 33px;
   }
 
   &__name {
@@ -127,6 +133,7 @@ cursor: pointer;
     font-style: normal;
     font-weight: 400;
     line-height: 1.125rem;
+    margin-bottom: 4px;
   }
 
   &__load-more {
