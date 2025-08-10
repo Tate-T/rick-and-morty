@@ -1,20 +1,24 @@
 .explore {
     border-radius: 100px;
     background: #0D171D;
-    width: 1442px;
+    max-width: 1442px;
     height: 744px;
     flex-shrink: 0;
     overflow: hidden;
     margin: auto;
 
     @media screen and (max-width: 1200px) {
-        width: 768px;
+        max-width: 768px;
         height: 747px;
         border-radius: 80px;
     }
 
     @media screen and (max-width: 768px) {
-        width: 375px;
+        max-width: 375px;
+        border-radius: 50px;
+    }
+    @media screen and (max-width: 460px) {
+        max-width: 320px;
         border-radius: 50px;
     }
 
