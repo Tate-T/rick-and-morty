@@ -14,6 +14,7 @@ html {
 
     &__wrapper {
         display: flex;
+        justify-content: center;
        
 
         @media screen and (min-width: 768px) {
@@ -111,6 +112,7 @@ html {
         display: block;
         margin-bottom: auto; // прилипає до низу при column-reverse
         align-self: center; // по центру на мобілці
+        margin-top: 64px;
 
 
         @media screen and (min-width: 320px) {
