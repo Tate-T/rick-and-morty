@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang=en><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Document</title><link rel=stylesheet href=/rick-and-morty/characters-page.d74e74ba.css><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;family=Poppins&amp;display=swap" rel=stylesheet><body>
+    <div class=backdrop-serch>
+<div class=modal>
+    <button type=button class=modal__close>
+         <svg xmlns:xmlns=http://www.w3.org/2000/svg width=22 height=22 color=#000 viewBox="0 0 22 22"><path stroke=#fff stroke-linecap=round stroke-linejoin=round stroke-width=1.5 d="m16.5 5.5-11 11M5.5 5.5l11 11"/></svg>
+    </button>
+        <h2 class=modal__serch-characters>Character Serch</h2>
+        <form class=modal__form>
+            <input class=modal__input placeholder="Enter character name">
+        </form>
+        <ul id=modal__results></ul>
+</div>
+</div>
+<header class=header>
+    <div class=container>
+    <div class=header__flex-elements>
+        
+        <button type=button class=header__burger>
+            <svg xmlns:xmlns=http://www.w3.org/2000/svg width=24 height=24 fill=none viewBox="0 0 24 24"><path stroke=#fafafa stroke-linecap=round stroke-linejoin=round stroke-width=2 d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+    <ul class=header__list>
+        <li class=header__item>
+            <a href=/rick-and-morty/characters-page.html class=header__button>Characters</a>
+            
+        </li>
+        <li class=header__item>
+            <a href=/rick-and-morty/episodes-page.html class=header__button-second>Episodes</a>
+        </li>
+    </ul>
+    <button type=button class=header__button-serch>
+         <svg xmlns:xmlns=http://www.w3.org/2000/svg width=18 height=18 fill=none viewBox="0 0 18 18"><path stroke=#fafafa stroke-linecap=round stroke-linejoin=round stroke-width=1.5 d="M8.25 14.25A6 6 0 1 0 8.249978236940583 2.25 6 6 0 0 0 8.25 14.25M15.75 15.75l-3.262-3.262"/></svg> Search 
+    </button>
+</div>
+</div>
+</header>
+    <section class=episodesHero>
+    <div class=container>
+        <div class=episodesHero__flex-elements>
+            <div class=episodesHero__first>
+                <h1 class=episodesHero__title>Episodes</h1>
+                    <p class=episodesHero__description>With a comprehensive guide to every episode, you can relive your
+                        favorite moments and discover new ones. From the bizarre and hilarious to the emotional and
+                        thought-provoking, our episode guide covers it all. </p>
+                <a class=episodesHero__link-home href=/rick-and-morty/index.html>Back home</a>
+            </div>
+            <div class=episodesHero__second>
+                <img class=episodesHero__img src=/rick-and-morty/family.d9b63964.webp alt=rick-sanchez>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div class=tags>
+  <div class=tags__track>
+    <div class=tags__track-wrap>
+      <span class="tags__item tags__item--dark">the adventures</span>
+      <span class="tags__item tags__item--green">Animated</span>
+      <span class="tags__item tags__item--light-green">Sitcom</span>
+    </div>
+    <div class=tags__track-wrap>
+      <span class="tags__item tags__item--green">Justin Roiland</span>
+      <span class="superpower tags__item tags__item--dark">superpower</span>
+    </div>
+    <div class=tags__track-wrap>
+      <span class="tags__item tags__item--light-green">creative</span>
+      <span class="tags__item tags__item--green">Amazing!</span>
+      <span class="tags__item tags__item--dark">Rick and Morty</span>
+      <span class="tags__item tags__item--light-green">comics</span>
+    </div>
+    <span class="follow tags__item tags__item--dark">follows</span>
+    <div class=tags__track-wrap>
+      <span class="tags__item tags__item--light-green">characters</span>
+      <span class="tags__item tags__item--green">Whoa</span>
+    </div>
+  </div>
+</div>
+
+    <section class=episodes>
+  <div class=container>
+<form class=episodes__form>
+  <div class=episodes__container>
+    <div class=episodes__input-container>
+      <div class=episodes__input-wrapper>
+        <label class=episodes__input-name>Name
+          <input class=episodes__input placeholder="Enter name" required>
+          <svg xmlns:xmlns=http://www.w3.org/2000/svg width=18 height=18 fill=none class=episodes__svg viewBox="0 0 18 18"><path stroke=#111 stroke-linecap=round stroke-linejoin=round stroke-width=1.5 d="M8.25 14.25A6 6 0 1 0 8.249978236940583 2.25 6 6 0 0 0 8.25 14.25M15.75 15.75l-3.263-3.262"/></svg>
+        </label>
+      </div>
+    </div>
+   <div class=episodes__custom-select>
+    <p class=episodes__season-select-name>Episode code</p>
+  <div class=episodes__custom-select-trigger>All seasons</div>
+  <div class=episodes__custom-select-options>
+    <div class=episodes__custom-select-option data-value=All>All</div>
+    <div class=episodes__custom-select-option data-value=01>1 Season</div>
+    <div class=episodes__custom-select-option data-value=02>2 Season</div>
+    <div class=episodes__custom-select-option data-value=03>3 Season</div>
+    <div class=episodes__custom-select-option data-value=04>4 Season</div>
+    <div class=episodes__custom-select-option data-value=05>5 Season</div>
+  </div>
+</div>
+  </div>
+</form>
+<ul class=episodes__list></ul>
+<div class=episodes__error>
+  <img class=episodes__error-image src=/rick-and-morty/portal-error.a8bde21b.webp alt=Error>
+  <p class=episodes__error-text>Oops! Try looking for something else...</p>
+</div>
+<div class=episodes__load-more>
+  <button class=episodes__load-more-btn>Load more</button>
+</div>
+</div>
+</section>
+    <footer class=black-footer>
+    <div class=container>
+        <div class=black-footer__block>
+            <a href=/rick-and-morty/index.html class=black-footer__logo>
+                <img class=black-footer__image src=/rick-and-morty/footer.cd4ed966.webp alt>
+                <h2 class=black-footer__rick>Rick and</h2>
+                <h2 class=black-footer__morty>Morty</h2>
+            </a>
+            <div class=black-footer__links__svg>
+                <div class=black-footer__links>
+                    <a href=/rick-and-morty/characters-page.html class=black-footer__link>Characters</a>
+                    <a href=/rick-and-morty/episodes-page.html class=black-footer__link>Episodes</a>
+                </div>
+                <div class=black-footer__svgs>
+                    <svg xmlns:xmlns=http://www.w3.org/2000/svg width=56 height=57 fill=none viewBox="0 0 56 57"><foreignObject width=0 height=0 x=0 y=0><div xmlns=http://www.w3.org/1999/xhtml style=backdrop-filter:blur(20px);clip-path:url(#bgblur_0_68_2108_clip_path);width:100%;height:100%>
+                            </div></foreignObject><rect width=55 height=55 x=.5 y=1 stroke=#fafafa data-figma-bg-blur-radius=40 opacity=.2 rx=11.5 /><path fill=#fafafa d="M32.5 20.484h2.171v-3.816a29 29 0 0 0-3.165-.168c-3.14 0-5.288 1.992-5.288 5.64v3.144h-3.546v4.272h3.546V40.5h4.25V29.556h3.534l.531-4.272h-4.065V22.56c0-1.26.323-2.076 2.033-2.076"/><defs><clipPath id=bgblur_0_68_2108_clip_path><rect width=55 height=55 x=.5 y=1 rx=11.5 /></clipPath></defs></svg>
+                    <svg xmlns:xmlns=http://www.w3.org/2000/svg width=24 height=25 fill=none class=black-footer__twitter__fix viewBox="0 0 24 25"><path stroke=#fafafa stroke-linecap=round stroke-linejoin=round stroke-width=2 d="M23 3.5a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4.5s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5q-.001-.419-.08-.83A7.7 7.7 0 0 0 23 3.5"/></svg>
+                    <svg xmlns:xmlns=http://www.w3.org/2000/svg width=56 height=57 fill=none viewBox="0 0 56 57"><rect width=55 height=55 x=.5 y=1 stroke=#fafafa stroke-opacity=.15 rx=11.5 /><path fill=#fafafa d="M34.985 19.95a1.568 1.568 0 1 0 0 3.137 1.568 1.568 0 0 0 0-3.137m6.01 3.163a9.9 9.9 0 0 0-.601-3.175 6.5 6.5 0 0 0-1.516-2.313 6.14 6.14 0 0 0-2.313-1.503 9.5 9.5 0 0 0-3.175-.614c-1.384-.078-1.829-.078-5.383-.078s-3.998 0-5.383.078a9.5 9.5 0 0 0-3.175.614 6.25 6.25 0 0 0-2.313 1.503 6.14 6.14 0 0 0-1.503 2.313 9.5 9.5 0 0 0-.614 3.175c-.078 1.385-.078 1.83-.078 5.383 0 3.555 0 3.999.078 5.384a9.5 9.5 0 0 0 .614 3.175 6.15 6.15 0 0 0 1.503 2.313c.65.667 1.44 1.18 2.313 1.502a9.5 9.5 0 0 0 3.175.614c1.385.079 1.83.079 5.383.079 3.554 0 3.999 0 5.384-.078a9.5 9.5 0 0 0 3.175-.614 6.14 6.14 0 0 0 2.313-1.503 6.3 6.3 0 0 0 1.516-2.313 9.9 9.9 0 0 0 .601-3.175c0-1.385.078-1.83.078-5.384s0-3.998-.078-5.383m-2.351 10.61c-.01.83-.16 1.651-.445 2.43a4 4 0 0 1-.98 1.503 4.2 4.2 0 0 1-1.503.98 7.3 7.3 0 0 1-2.43.444c-1.306.066-1.79.079-5.226.079-3.437 0-3.92 0-5.227-.079a7.5 7.5 0 0 1-2.535-.392 4.3 4.3 0 0 1-1.437-.98 3.9 3.9 0 0 1-.967-1.503 7.2 7.2 0 0 1-.523-2.483c0-1.306-.078-1.79-.078-5.226s0-3.92.078-5.226c.006-.848.16-1.689.457-2.483a3.9 3.9 0 0 1 1.032-1.437c.398-.45.888-.806 1.438-1.046a7.5 7.5 0 0 1 2.483-.444c1.306 0 1.79-.078 5.226-.078 3.437 0 3.92 0 5.227.078.83.01 1.651.16 2.43.444a4 4 0 0 1 1.555 1.046c.428.401.763.892.98 1.437.29.796.441 1.636.445 2.483.065 1.306.078 1.79.078 5.226 0 3.437-.013 3.92-.078 5.227m-10.637-11.93a6.703 6.703 0 1 0 6.716 6.703 6.69 6.69 0 0 0-6.716-6.703m0 11.055A4.352 4.352 0 1 1 28.008 24.145a4.352 4.352 0 0 1-.001 8.702"/></svg>
+                </div>
+            </div>
+        </div>
+        <h2 class=black-footer__agreement>Privacy Policy Public Offering Agreement</h2>
+    </div>
+</footer>
+    <div class="backdrop-episodes data-modal is-hidden">
+  <div class=episodes-modal>
+    <button class="data-modal-close episodes-modal__close-button">
+      <svg xmlns:xmlns=http://www.w3.org/2000/svg width=22 height=22 fill=none viewBox="0 0 22 22"><path stroke=#a1d737 stroke-linecap=round stroke-linejoin=round stroke-width=1.5 d="m16.5 5.5-11 11M5.5 5.5l11 11"/></svg>
+    </button>
+    <div class=episodes-modal__fake-container>
+      <h2 class=episodes-modal__series-name>Pilot</h2>
+      <div class=episodes-modal__series>
+        <div class=episodes-modal__id-container>
+          <p class=episodes-modal__series-id>Id</p>
+          <h3 class=episodes-modal__series-name-id>000</h3>
+        </div>
+        <div class=episodes-modal__date-container>
+          <p class=episodes-modal__series-air-date>Air date</p>
+          <h3 class=episodes-modal__series-date>December 2, 2013</h3>
+        </div>
+      </div>
+
+      <h2 class=episodes-modal__characters>Characters</h2>
+
+      <div class=episodes-modal__major-container>
+        <h3 class=episodes-modal__major-characters>Major Characters</h3>
+
+        <div class=episodes-modal__characters-container>
+          <div class=episodes-modal__characters-card>
+            <img class=episodes-modal__characters-image src=/rick-and-morty/rick-2.e8cbe482.webp alt=rick>
+            <h3 class=episodes-modal__characters-name>Rick</h3>
+          </div>
+          <div class=episodes-modal__characters-card>
+            <img class=episodes-modal__characters-image src=/rick-and-morty/morty.fe133b71.webp alt=morty>
+            <h3 class=episodes-modal__characters-name>Morty</h3>
+          </div>
+          <div class=episodes-modal__characters-card>
+            <img class=episodes-modal__characters-image src=/rick-and-morty/beth.32026a54.webp alt=beth>
+            <h3 class=episodes-modal__characters-name>Beth</h3>
+          </div>
+          <div class=episodes-modal__characters-card>
+            <img class=episodes-modal__characters-image src=/rick-and-morty/jerry.7a606417.webp alt=jerry>
+            <h3 class=episodes-modal__characters-name>Jerry</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script type=module src=/rick-and-morty/characters-page.d49b6be1.js></script>
+  
+
