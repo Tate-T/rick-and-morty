@@ -136,6 +136,11 @@
         cursor: pointer;
         margin-right: 20px;
 
+        @media screen and (min-width: 400px) {
+            display: none;
+            
+        }
+
         @media screen and (min-width: 768px) {
             display: none;
         }
@@ -160,6 +165,7 @@
             z-index: 10;
             flex-direction: column;
             gap: 10px;
+
 
             &.active {
                 display: flex;
@@ -278,6 +284,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 18px;
+        margin-left: auto;
 
         @media screen and (min-width: 768px) {
             margin-left: 340px;
