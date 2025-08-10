@@ -116,6 +116,10 @@
         letter-spacing: 0.16px;
     }
 
+    &__link:hover {
+        color: #A1D737;
+    }
+
     &__svgs {
         display: flex;
         align-items: flex-start;
