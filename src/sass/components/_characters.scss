@@ -19,6 +19,8 @@
     cursor: pointer;
     border: none;
     position: absolute;
+    right: 24px;
+    top: 16px;
   }
 
   &__item img {
@@ -39,6 +41,7 @@ background: #DAF836;
 padding: 16px 24px; 
 position: relative;
 width: 233px;
+box-sizing: border-box;
   }
 
   &__input {
@@ -88,6 +91,7 @@ cursor: pointer;
     flex-wrap: wrap;
     gap: 1.25rem;
     margin-top: 61px;
+    justify-content: center;
   }
 
   &__img-list {
