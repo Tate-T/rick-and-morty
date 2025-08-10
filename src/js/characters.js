@@ -1,29 +1,53 @@
 const characterList = document.getElementById('character__list');
-if (!characterList) return;
+const loadMoreBtn = document.querySelector('.character__load-more');
 
-fetch('https://rickandmortyapi.com/api/character')
-  .then(response => response.json())
-  .then(data => {
-    const characters = data.results;
-    characterList.innerHTML = characters.map(character => `
-          <li>
-            <img class="character__img-list" src="${character.image}" alt="${character.name}">
-            <h2 class="character__name">${character.name}</h2>
-            <h3 class="character__info">
-            <span class="character__span">Origin:</span>  ${character.origin.name}
-            </h3>
-            <h3 class="character__info">
-              <span class="character__span">Location:</span> ${character.location.name}
-            </h3>
-          </li>
-        `).join('');
-  })
-  .catch(error => {
-    console.error('Помилка завантаження персонажів:', error);
-    characterList.innerHTML = '<li>Не вдалося завантажити дані.</li>';
-  });
+if (!characterList || !loadMoreBtn) return;
 
+let currentPage = 1;   // поточна сторінка
+let isLoading = false; // щоб уникнути подвійних кліків
 
+function loadCharacters(page) {
+  isLoading = true;
+  fetch(`https://rickandmortyapi.com/api/character?page=${page}`)
+    .then(response => response.json())
+    .then(data => {
+      const characters = data.results;
+      characterList.innerHTML += characters.map(character => `
+        <li>
+          <img class="character__img-list" src="${character.image}" alt="${character.name}">
+          <h2 class="character__name">${character.name}</h2>
+          <h3 class="character__info-o">
+            <span class="character__span">Origin:</span> ${character.origin.name}
+          </h3>
+          <h3 class="character__info-l">
+            <span class="character__span">Location:</span> ${character.location.name}
+          </h3>
+        </li>
+      `).join('');
+
+      // Якщо більше немає сторінок — приховуємо кнопку
+      if (!data.info.next) {
+        loadMoreBtn.style.display = 'none';
+      }
+    })
+    .catch(error => {
+      console.error('Помилка завантаження персонажів:', error);
+      characterList.innerHTML += '<li>Не вдалося завантажити дані.</li>';
+    })
+    .finally(() => {
+      isLoading = false;
+    });
+}
+
+// Початкове завантаження
+loadCharacters(currentPage);
+
+// Клік по кнопці "Load More"
+loadMoreBtn.addEventListener('click', () => {
+  if (isLoading) return; // захист від спаму кліків
+  currentPage++;
+  loadCharacters(currentPage);
+});
 document.addEventListener('DOMContentLoaded', () => {
   const nameInput = document.querySelector('.character__input');
   const selects = document.querySelectorAll('.character__filter-container select');

@@ -31,7 +31,6 @@ html {
     &__main-elements {
         display: flex;
         flex-direction: column-reverse; // мобілка — перевернутий порядок
-        height: 100vh; // вся висота екрана
 
         @media screen and (min-width: 768px) {
 
@@ -67,36 +66,36 @@ html {
     }
 
     &__img {
-        width: 335px;
-        height: 259px;
+        max-width: 335px;
+        height: auto;
         margin-top: 100px;
 
         @media screen and (min-width: 768px) {
-            width: 532px;
+            max-width: 532px;
             height: 411px;
             margin-top: 54px;
 
         }
 
         @media screen and (min-width: 1200px) {
-            width: 542px;
+            max-width: 542px;
             margin-top: 54px;
         }
     }
 
     &__img-text {
-        width: 321.602px;
+        max-width: 321.602px;
         height: 121.739px;
         flex-shrink: 0;
 
         @media screen and (min-width: 768px) {
-            width: 460px;
+            max-width: 460px;
             height: 175px;
             flex-shrink: 0;
         }
 
         @media screen and (min-width: 1200px) {
-            width: 542px;
+            max-width: 542px;
 
         }
 
