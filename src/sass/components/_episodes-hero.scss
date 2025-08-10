@@ -60,18 +60,6 @@
 
     }
 
-    &__div-text {
-        width: 317px;
-
-        @media screen and (min-width: 768px) {
-            width: 334px;
-
-        }
-
-        @media screen and (min-width: 1200px) {
-            width: 482px;
-        }
-    }
 
     &__description {
         color: #FAFAFA;
